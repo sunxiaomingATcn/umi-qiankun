@@ -1,5 +1,7 @@
 module.exports = {
   transpileDependencies: ['common'],
+  publicPath: './',
+  outputDir: '../dist',
   chainWebpack: config => {
     config.plugin('html')
       .tap((args) => {
