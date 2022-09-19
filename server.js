@@ -22,3 +22,5 @@ app.get('/', (req, res) => {
 app.listen(8888, () => {
   console.log(`App listening at port 8888`)
 })
+
+// http://localhost:8888/sub-product/index.html#/
