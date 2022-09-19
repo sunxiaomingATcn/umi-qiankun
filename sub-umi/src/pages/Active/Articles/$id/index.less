@@ -1,0 +1,141 @@
+.artContainer{
+    padding: .37rem;
+    background-color: #fff;
+}
+.artFormContainer{
+    margin-top: .3rem;
+    font-size: .28rem;
+    color: #333;
+    .formItem li{
+        border-bottom: 1px solid #DFDFDF;
+    }
+    input{
+        text-align: right;
+    }
+    font-family:PingFangSC-Regular,PingFang SC;
+    .artFormTitle{
+        width: 100%;
+    }
+    .errorMsg{
+        color: red;
+        margin-bottom: .1rem;
+    }
+    .VerifyCodeItem{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .VerifyCodeItemLabel{
+            // flex: 1 1;
+        }
+        :global{
+            .am-list-item{
+            border-bottom: 0 !important;
+
+            }
+            .am-list-line::after{
+                width:0 !important;
+            }
+        }
+        .verifyCodeInput{
+            margin: 0 .2rem;
+            flex: 1 1;
+        }
+    }
+
+    :global{
+        .am-list-line::after,.am-list-item.am-input-error .am-input-error-extra{
+            width: 0 !important;
+        }
+        .am-picker-popup-header .am-picker-popup-header-left{
+            color: #666666;
+        }
+        .am-picker-popup-header .am-picker-popup-header-right{
+            color:#111111
+        }
+        .am-list-item .am-list-line .am-list-arrow{
+            width: .14rem;
+        }
+        .am-list-item .am-list-line{
+            padding-right: 0;
+        }
+        .am-list-item .am-list-line .am-list-content,.am-list-item .am-input-label,.am-list-item .am-input-control input{
+            font-size:0.28rem;
+            font-weight:400;
+            color:#111;
+        }
+        .am-list-item .am-input-control input{
+            line-height: 1.15;
+        }
+        .am-list-item .am-list-line .am-list-extra{
+            font-size:0.28rem;
+            font-weight:400;
+            color:rgba(51,51,51,1);
+            line-height:0.42rem;
+        }
+        .am-list-item.am-input-item, .am-list-item{
+            padding-left: 0;
+            min-height: 1rem;
+        }
+        .am-list-body::before{
+            width:0 !important;
+        }
+    }
+}
+.artForm{
+    width:100%;
+    background:rgba(255,255,255,1);
+    box-shadow:0rem 0.02rem 0.2rem 0rem rgba(0,0,0,0.1);
+    border-radius:0.2rem;
+    margin-top: .32rem;
+    padding: .4rem;
+}
+.submit{
+    width:5.9rem;
+    height:0.9rem;
+    background:linear-gradient(270deg,rgba(255,141,0,1) 0%,rgba(255,204,0,1) 100%);
+    box-shadow:0rem 0.04rem 0.1rem 0rem rgba(255,144,0,0.5);
+    border-radius:0.45rem;
+    font-size:0.32rem;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:0.45rem;
+    margin-top: .3rem;
+}
+.flexContent{
+    display: flex;
+    justify-content: space-between;
+    min-height: 1.1rem;
+    align-items: center;
+    .pickerSel{
+        color: #111;
+        span{
+            vertical-align: middle;
+        }
+    }
+    .arrow{
+        position: relative;
+        svg{
+            vertical-align: middle;
+        }
+    }
+}
+.artVerifyCode{
+    div{
+        width:1.64rem;
+        height:0.6rem;
+        border-radius:0.08rem;
+        font-size:0.22rem;
+        font-weight:400;
+        line-height:0.6rem;
+    }
+}
+.artVerifyCodeCaptcha{
+    div{
+        width:1.64rem;
+        height:0.6rem;
+        border-radius:0.08rem;
+        font-size:0.22rem;
+        font-weight:400;
+        line-height:0.5rem;
+    }
+}

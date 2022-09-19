@@ -1,0 +1,496 @@
+* {
+    touch-action: pan-y;
+}
+.container {
+    padding-top: 0.34rem;
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    input {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .label {
+        font-size: 0.28rem;
+        font-family: PingFangSC-Regular;
+        color: #172B4D;
+        line-height: 0.42rem;
+        height: 0.42rem;
+        font-weight: 400;
+    }
+
+    .mobile_input {
+        justify-content: end;
+        input{
+            width: 2.8rem;
+            // margin-right: .2rem;
+        }
+    }
+
+    .card_period {
+        color: #191C20;
+        font-size: 0.28rem;
+        font-family: PingFangSC;
+        margin-right: 0.24rem;
+    }
+
+    .checke {
+        position: relative;
+        -webkit-appearance: none;
+        width: 1.02rem;
+        height: 0.62rem;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 0.36rem;
+        border: 0.02rem solid rgba(244, 245, 246, 1);
+        background: #eee;
+        outline: none;
+
+        &:before {
+            width: 0.56rem;
+            height: 0.56rem;
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0rem 0.04rem 0.04rem 0rem rgba(0, 0, 0, 0.2);
+            border: 0.01rem solid rgba(229, 229, 229, 1);
+            position: absolute;
+            left: 0;
+            content: '';
+            border-radius: 50%;
+            background: #eee;
+            transition: all 0.2s linear;
+            background: rgba(255, 255, 255, 1);
+        }
+
+        &:checked {
+            background: #3A8FFF;
+        }
+
+        &:checked:before {
+            left: calc(100% - 0.56rem);
+            transition: all 0.2s linear;
+        }
+    }
+
+    input {
+        text-align: right;
+        width: 4.2rem;
+        height: 0.42rem;
+        font-size: 0.28rem;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: #191C20;
+        line-height: 0.42rem;
+    }
+
+    .errors {
+        min-height: 0.34rem;
+        font-size: 0.22rem;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: #F5192A;
+        line-height: 0.34rem;
+    }
+}
+.item_warpper {
+    background-color: #ffffff;
+    &:last-child{
+        border-bottom: 0;
+    }
+    .item {
+        display: flex;
+        padding-top: 0.34rem;
+        font-family: PingFangSC-Regular;
+        .item_children {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 0.28rem;
+            font-weight: 400;
+            color: #172B4D;
+            line-height: 0.5rem;
+        }
+
+        .item_extra {
+            text-align: right;
+            margin-right: 0.4rem;
+            max-width: 4.9rem;
+            line-height: 0.5rem;
+            color: #172B4D;
+            font-size: 0.28rem;
+            position: relative;
+            &.readonly{
+                margin-right: 0;
+            }
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 0.1rem;
+                height: 0.2rem;
+                right: -0.4rem;
+                top: calc(50% - 0.1rem);
+                background: url('~@/assets/arrow.svg') no-repeat;
+                background-size: 100%;
+            }
+        }
+
+        .extraDom {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .errors {
+        height: 0.34rem;
+        font-size: 0.22rem;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: #F5192A;
+        line-height: 0.34rem;
+    }
+}
+
+.signaturePopup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    .middsignaturePopup{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .mask{
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.6;
+    }
+    .Popup{
+        width: 6.2rem;
+        height: 6.3rem;
+        background: #FFFFFF;
+        border-radius: 0.1rem;
+        position: absolute;
+        top: 3.52rem;
+        left: 0.65rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 0.25rem;
+            height: 0.25rem;
+            position: absolute;
+            top: 0.3rem;
+            right: 0.3rem;
+            z-index: 12;
+        }
+        .top{
+            font-size: 0.34rem;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #191C20;
+            line-height: 0.52rem;
+            margin: 0.35rem;
+        }
+
+        .bottom{
+            font-size: 0.3rem;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #191C20;
+            line-height: 0.48rem;
+            margin: 0.25rem 0;
+            text-align: center;
+        }
+        .signature{
+            width: 5.4rem;
+            height: 3.1rem;
+            background: #F4F5F6;
+            border-radius: 0.1rem;
+            border: 0.01rem solid #D6D6D6;
+            margin: 0 0.4rem;
+        }
+        .btn{
+            width: 6.2rem;
+            height: 1rem;
+            box-shadow: 0rem -0.01rem 0rem 0rem #D6D6D6;
+            display: flex;
+            border-top:0.01rem solid #D6D6D6;
+            div{
+                flex: 1;
+            }
+            .submit{
+                border-left:0.01rem solid #D6D6D6;
+                font-size: 0.32rem;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #3A8FFF;
+                line-height: 1rem;
+                text-align: center;
+            }
+            .rewrite{
+                font-size: 0.32rem;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #595C65;
+                line-height: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.signature{
+    border-bottom: 1px solid #EFEFEF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        text-align: right;
+        margin-right: 0.4rem;
+        max-width: 4.9rem;
+        line-height: 0.5rem;
+        color: #172B4D;
+        font-size: 0.28rem;
+        position: relative;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0.1rem;
+            height: 0.18rem;
+            right: -0.4rem;
+            top: calc(50% - 0.09rem);
+            background: url('~@/assets/arrow.svg') no-repeat;
+            background-size: contain;
+        // transform: rotate(180deg);
+        }
+    }
+}
+
+.checkRadio {
+    min-width: 1.4rem;
+    height: 0.56rem;
+    border-radius: 0.04rem;
+    font-size: 0.26rem;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    line-height: 0.56rem;
+    text-align: center;
+    background: #EFEFEF;
+    color: #595C65;
+    display: inline-block;
+    margin-right: 0;
+
+    input[type="radio"] {
+        height: 0;
+        width: 0;
+    }
+
+    &.checkRadio_checked {
+        color: #FFFFFF;
+        background: #3A8FFF;
+    }
+}
+
+.line {
+    width: 1px;
+    height: 0.36rem;
+    background: #EBECF0;
+    margin: 0 .2rem;
+    // margin-right: .2rem;
+}
+
+.send {
+    color: #0065FF;
+    font-size: 0.28rem;
+    font-family: PingFangSC;
+    // width: 2.4rem;
+    width: auto;
+    text-align: right;
+
+    &.disabled {
+        color: #9D9D9D;
+    }
+}
+.job_container {
+    background: #F4F5F6;
+
+    .job_item {
+        margin-top: 0.16rem;
+    }
+
+    .first_ele_title {
+        padding: 0.3rem 0.4rem;
+        padding-left: 0.8rem;
+        font-size: 0.32rem;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        position: relative;
+        color: #172B4D;
+        line-height: 0.36rem;
+        border-bottom: 1px solid #EFEFEF;
+        background: #FFFFFF;
+        &:before{
+            top: calc(50% - 0.15rem);
+            display: block;
+            position: absolute;
+            left: 0.4rem;
+            content: '';
+            height:0.3rem;
+            width: 0.3rem;
+            background: url("~@/assets/icon/job.png") no-repeat;
+            background-size: 100% 100%;
+        }
+
+        &:after {
+            top: calc(50% - 0.21rem);
+            display: block;
+            position: absolute;
+            right: 0.4rem;
+            content: '';
+            height: 0.42rem;
+            width: 0.42rem;
+            background: url("~@/assets/icon/arrow-top.png") no-repeat;
+            background-size: 100% 100%;
+            transform: rotate(180deg);
+        }
+    }
+
+    .second_ele_title {
+        display: none;
+        position: relative;
+        padding: 0.3rem .4rem;
+        padding-right: .8rem;
+        font-size: 0.26rem;
+        font-weight: 400;
+        color: rgba(35, 40, 50, 1);
+        line-height: 0.5rem;
+        border-bottom: 1px solid #EFEFEF;
+        background: #FFFFFF;
+        color: #172B4D;
+        &.active {
+            display: block;
+        }
+
+        &:after {
+            top: calc(50% - 0.21rem);
+            display: block;
+            position: absolute;
+            right: .4rem;
+            content: '';
+            height: 0.42rem;
+            width: 0.42rem;
+            background: url("~@/assets/icon/arrow-top.png") no-repeat;
+            background-size: 100% 100%;
+            transform: rotate(180deg);
+        }
+    }
+
+    .third_item {
+        border-bottom: 1px solid #EBECF0;
+        display: none;
+        padding: 0.3rem 0;
+        margin: 0 .4rem;
+        justify-content: space-between;
+        color: #5E6C84;
+        &.active {
+            display: flex;
+        }
+
+        .level {
+            font-size: 0.26rem;
+            font-family: PingFangSC;
+            font-weight: 400;
+            color: rgba(58, 143, 255, 1);
+            line-height: 0.5rem;
+        }
+
+        .level_title {
+            // line-height: 0.5rem;
+
+        }
+    }
+}
+
+
+.longTermCheckboxContainer{
+    position: relative;
+    .longTermCheckbox{
+        width: 0.28rem;
+        height: 0.28rem;
+        opacity: 0;
+        &+span.longTermCheckboxStyle{
+            display: block;
+            width: 0.28rem;
+            height: 0.28rem;
+            position: absolute;
+            top: 50%;
+            margin-top: -.15rem;
+            left: 0;
+            background: #FFFFFF;
+            border: 1px solid #DFE1E6;
+            border-radius: 50%;
+        }
+        &:checked{
+            &+span.longTermCheckboxStyle{
+                background: #0065FF;
+                border-color: #0065FF;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    width: 0.14rem;
+                    height: 0.08rem;
+                    border-left: 1px solid #ffffff;
+                    border-bottom: 1px solid #ffffff;
+                    top: calc(50% - 0.07rem);
+                    left: calc(50% - 0.08rem);
+                    transform: rotate(
+                -45deg
+                );
+                }
+            }
+        }
+    }
+    span:last-child{
+        margin-left: .06rem;
+    }
+}
+
+.jobclicked{
+    &::after{
+        transition: all 0.2s;
+        transform: rotate(0deg) !important;
+    }
+}
+
+
+.insured_item{
+    &:not(:last-child){
+        border-bottom: 1px solid #EBECF0;
+    }
+    position: relative;
+    .required{
+        color: red;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: .2rem;
+        margin-top: -.1rem;
+    }
+    &.insured_item_required{
+        .container,.item{
+            padding-left: .15rem;
+        }
+    }
+}

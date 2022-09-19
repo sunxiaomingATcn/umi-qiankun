@@ -1,0 +1,82 @@
+.item_warpper {
+    background-color: #ffffff;
+    border-bottom: 1px solid #efefef;
+
+    &:last-child {
+        border-bottom: 0;
+
+    }
+    .item_description{
+        max-width:3.5rem;
+        font-size: 0.24rem;
+        line-height: 0.26rem;
+        font-weight: 400;
+        color: #B0B3B4;
+        padding-bottom: 0.1rem;
+    }
+    .item_annotation{
+        font-size: 0.26rem;
+        font-weight: 600;
+        line-height: 0.45rem;
+        padding-bottom: 0.1rem;
+        color: rgb(58, 143, 255);
+    }
+    .item {
+        display: flex;
+        padding-top: 0.3rem;
+        padding-bottom: 0.1rem;
+        font-family: PingFangSC-Regular;
+        justify-content: space-between;
+        .item_children {
+            flex: 1;
+            max-width:3.5rem;
+            font-size: 0.26rem;
+            font-weight: 400;
+            color: #172B4D;
+            line-height: 0.45rem;
+            display: flex;
+            margin-bottom: .2rem;
+            align-items: center;
+        }
+
+        .item_extra {
+            float: right;
+            text-align: right;
+            margin-right: 0.4rem;
+            max-width: 5rem;
+            line-height: 0.5rem;
+            color: #172B4D;
+            font-size: 0.26rem;
+            position: relative;
+            &.extra_detail{
+                line-height: 0.45rem;
+            }
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 0.1rem;
+                height: 0.18rem;
+                right: -0.4rem;
+                top: .13rem;
+                background: url('~@/assets/arrow.svg') no-repeat;
+                background-size: contain;
+            }
+        }
+
+        .extraDom {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .errors {
+        height: 0.34rem;
+        font-size: 0.22rem;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: #F5192A;
+        line-height: 0.34rem;
+    }
+}

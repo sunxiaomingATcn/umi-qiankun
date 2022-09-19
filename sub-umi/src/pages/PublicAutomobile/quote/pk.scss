@@ -1,0 +1,126 @@
+.con {
+  background: white;
+  padding-bottom: 2rem;
+  .tableBodyCon {
+    width: 100%;
+    overflow: auto scroll;
+    table {
+      min-width: 100%;
+      table-layout: fixed;
+      td {
+        overflow: hidden;
+        padding: .24rem;
+        background: #ffffff;
+        border: 1px solid #EBEEF0;
+        font-size: .24rem;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333D4F;
+        box-sizing: border-box;
+        white-space: normal;
+        text-align: left;
+      }
+      tr{
+        position: relative;
+        >td:nth-child(1){
+          text-align: center;
+          background: #F8F9F9;
+          position: sticky;
+          left: 0;
+        }
+        .infoTd{
+          border: 0px!important;
+          position: sticky!important;
+          left: 0!important;
+          background: #ffffff!important;
+          font-size: .26rem!important;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #172B4D!important;
+        }
+        .dingTd{
+          width: 130px;
+          z-index: 2!important;
+          position: sticky!important;
+          left: 89px!important;
+        }
+      }
+
+      .headerTd{
+        position: relative;
+        height: 1.7rem;
+        .dingCon{
+          width: 1.12rem;
+          height: .4rem;
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #F8F9F9;
+          border-radius: 0px 0px 2px 0px;
+          >img{
+            width: .2rem;
+            height: .2rem;
+          }
+          >span{
+            font-size: .22rem;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #5E6C84;
+            margin-left: .1rem;
+          }
+        }
+        .dingConActive{
+          @extend .dingCon;
+          background: #E4F0FF;
+          >span{
+            color: #437DFF;
+          }
+        }
+        .logoCon{
+          display: flex;
+          .logo{
+            width: .56rem;
+            height: .4rem;
+            align-self: center;
+          }
+          .mid{
+            display: flex;
+            flex-direction: column;
+            >span:nth-child(1){
+              text-align: left;
+              margin-left: .1rem;
+              max-width: 1.4rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              font-size: .26rem;
+              font-family: PingFangSC-Medium, PingFang SC;
+              font-weight: 500;
+              color: #172B4D;
+            }
+            >span:nth-child(2){
+              text-align: left;
+              margin-top: .04rem;
+              font-size: .26rem;
+              font-family: PingFangSC-Semibold, PingFang SC;
+              font-weight: 600;
+              color: #FF5935;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+  }
+  .tableHeaderCon {
+    @extend .tableBodyCon;
+    // overflow: hidden;
+    overflow: auto scroll;
+    z-index: 10;
+  }
+}

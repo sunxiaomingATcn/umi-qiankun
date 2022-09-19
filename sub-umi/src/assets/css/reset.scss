@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+/* 解决IOS默认滑动很卡的情况 */
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    font-size: 0.26rem;
+    color: #191c20;
+    font-family: PingFangSC, helvetica, 'Heiti SC';
+}
+
+input[type='text'],
+input[type='password'] {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+img {
+    vertical-align: middle;
+    font-size: 0;
+}
+
+/* 禁止缩放表单 */
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+input {
+    resize: none;
+    border: none;
+}
+
+/* 设置HTML5元素为块 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* 图片自适应 */
+img  {
+    width: 100%;
+    height: auto;
+    width: auto\9;
+    -ms-interpolation-mode: bicubic;
+}
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+article,
+aside,
+ figcaption,
+ figure,
+ footer,
+ header,
+    menu,
+ nav,
+ section {
+    margin: 0;
+    padding: 0;
+}
+
+em,i {
+    font-style: normal;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-size: 0.24rem;
+}
+
+textarea {
+    resize: none; /*禁用了文本的拖拉，尤其在谷歌下*/
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+    list-style: none;
+}
+a {
+    color: #191c20;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.one-txt-cut {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*多行溢出 手机端使用*/
+.txt-cut {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /* -webkit-line-clamp: 2; */
+    -webkit-box-orient: vertical;
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+
+
+
+.btn{
+    line-height: 1.499;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    background-image: none;
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+    box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    height: 32px;
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: rgba(0,0,0,0.65);
+    background-color: #fff;
+    border-color: #d9d9d9;
+}
+table{
+    //width:100%;
+    text-align:center;/*文本居中*/
+    border-collapse:collapse; /*表格的边框合并，如果相邻，则共用一个边框*/
+    border-spacing:0; /*设置行与单元格边框的间距。当表格边框独立（即border-collapse:separate;）此属性才起作用*/
+}
+
+table td{
+    word-break: break-all; /*允许在字内换行,即单词可分*/
+    word-wrap:break-word;/*允许长单词或URL地址换行*/
+    border-right:1px solid #939598;
+    border-bottom:1px solid #939598;
+    font:500 14px Arial;
+}
+

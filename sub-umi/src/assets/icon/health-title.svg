@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="376px" height="90px" viewBox="0 0 376 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>告知-bg</title>
+    <desc>Created with Sketch.</desc>
+    <g id="阿保2.2+" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="健康告知-投保人" transform="translate(0.000000, -128.000000)">
+            <g id="顶部选项卡/2项/4字(2项)" transform="translate(0.000000, 128.000000)">
+                <g id="告知-bg">
+                    <g>
+                        <polygon id="选项1文字下划线" fill="#3A8FFF" points="0 0 355 0 375 45 355 90 0 90"></polygon>
+                        <polyline id="路径-5" stroke="#FFFFFF" points="355 0 375 45 355 90"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

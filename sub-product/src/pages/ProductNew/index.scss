@@ -1,0 +1,142 @@
+.InsuranceTips{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    .mask{
+        width: 100%;
+        height: 100%; 
+        background: #000000;
+        opacity: 0.6;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 4;
+    }
+    .Tips{
+        width: 6.2rem;
+        padding: .4rem .5rem; 
+        background: #FFFFFF;
+        border-radius: 0.2rem;
+        position: fixed;
+        z-index: 5;
+        .title{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: .28rem;
+            h3{
+                font-size: 0.32rem;
+                font-weight: 500;
+                color: #172B4D;
+            }
+            .loading{
+                width: 0.9rem;
+                height: 0.9rem;
+                background: #fff;
+                margin-top:0.45rem;
+                border:.1rem solid #E0E9EE;
+                border-right-color: #0c80fe;
+                border-radius: 100%;
+                animation: loading1 1s infinite linear;
+            }
+        }
+        .TipsContent{
+            max-height: 7rem;
+            overflow-y: auto;
+            font-size: 0.28rem;
+            color: #5E6C84;
+            line-height: 0.44rem;
+            p{
+                margin-bottom:.3rem;
+                span{
+                    color: #0065FF;
+                }
+            }
+        }
+        .tipsBtn{
+            text-align: center;
+            padding: .1rem 0;
+            padding-top: .3rem;
+        }
+
+        button{
+            width: 2.2rem;
+            height: 0.9rem;
+            background: #B0B3B4;
+            border-radius: 0.1rem;
+            font-size: 0.32rem;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 0.48rem;
+        }
+        @keyframes loading1 {
+            from {
+                transform: rotate(0deg)
+            }
+
+            to {
+                transform: rotate(360deg)
+            }
+        } 
+    }
+}
+.popContent{
+    line-height: .5rem;
+}
+
+.proContainer{
+    height: 100%;
+    background-color: #F4F5F7;
+    .proContentContainer{
+        // padding-bottom: 1.8rem;
+        height: calc(100% - 1.8rem);
+        overflow-x: hidden;
+        background: #F4F5F6;
+    }
+}
+
+:global{
+    .product_insured_fix_amount {
+        font-size: 0.46rem;
+        font-weight: bold;
+        color: rgba(255, 89, 53, 1);
+        text-align: center;
+        div{
+            color: rgba(23, 43, 77, 0.85);
+            margin-top: .15rem;
+            font-weight: normal;
+            font-size: 0.24rem;
+        }
+    }
+    .product_insured_quote_amount{
+        font-size: 0.46rem;
+        font-weight: bold;
+        color: rgba(255, 89, 53, 1);
+        text-align: center;
+        span{
+            font-size: .26rem;
+        }
+        button{
+            float: right;
+            margin-right: .3rem;
+        }
+    }
+    .product_insured_fix_amount{
+        span{
+            font-size: .26rem;
+        }
+    }
+}
+:global{
+    #pictureNotify{
+        color: #0065FF;
+
+    }
+}

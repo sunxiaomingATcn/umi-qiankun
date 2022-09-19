@@ -1,0 +1,117 @@
+.pop{
+    position: fixed;
+    width:100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    &:before{
+        display: block;
+        content: "";
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,1);
+        opacity:0.7;
+    }
+    .popContent{
+        width: 5.2rem;
+        position: absolute;
+        top: 3.45rem;
+        left: 1.14rem;
+    }
+    .popBtn{
+        position: absolute;
+        top: 4.79rem;
+        width: 3.62rem;
+        left: 2.05rem;
+    }
+    .wechatNum{
+        position: absolute;
+        text-align: center;
+        top: 6.73rem;
+        height:0.26rem;
+        font-size:0.33rem;
+        font-family:PingFang SC;
+        font-weight:600;
+        color:rgba(255,241,101,1);
+        width: 100%;
+        z-index: 1000;
+    }
+    .popClose{
+        position: absolute;
+        top: 8.85rem;
+        width: .8rem;
+        left: 3.35rem;
+    }
+}
+
+.details{
+    background-color: #fff;
+    img{
+        width: 100%;
+        display: block;
+    }
+    padding-bottom: 1.68rem;
+    footer{
+        padding: .37rem 0;
+        line-height: .34rem;
+        font-size: .22rem;
+        color: #222246;
+        text-align: center;
+        background-color: #F5F6F7;
+        color: #2A5082;
+        img{
+            display: inline-block;
+            width: .21rem;
+            margin-right: .06rem;
+            vertical-align: middle;
+            margin-top: -.03rem;
+        }
+        p:last-child{
+            // margin-top: .12rem;
+        }
+    }
+}
+.topReceive{
+    position: absolute;
+    width: 3.3rem;
+    top: 4rem;
+    left: 2.1rem;
+}
+.footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    img{
+        width: 100%;
+    }
+}
+
+
+.flowStyle2{
+    h3{
+        font-size:0.38rem;
+        font-family:PingFang SC;
+        font-weight:500;
+        color:rgba(13,13,13,1);
+        padding: .3rem .35rem;
+        line-height:0.52rem;
+        span{
+            color:#EA1301
+        }
+    }
+    .btnContainer{
+        position: relative;
+        .topReceive{
+            width: 6.8rem;
+            position: absolute;
+            top: .2rem;
+            left: .35rem;
+        }
+    }
+    
+    .details{
+        padding-bottom: 1rem;
+    }
+}

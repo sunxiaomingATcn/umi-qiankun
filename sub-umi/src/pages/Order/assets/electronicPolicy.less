@@ -1,0 +1,39 @@
+.electronicPolicy{
+  padding: .3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .policy{
+    margin-bottom: .4rem;
+    .policyImg{
+      background-color: #F4F6F9;
+      padding: .04rem;
+      width: 3.3rem;
+      border-radius: .1rem;
+      min-height: 2.5rem;
+      :global{
+        #PDFview{
+          height: 2.5rem;
+          width: auto;
+          canvas{
+            display: flex;
+            height: 100%;
+            margin: 0 auto;
+          }
+        }
+        img{
+          height: 100%;
+          height: auto;
+        }
+      }
+    }
+    p{
+      font-size: .24rem;
+      font-weight: 400;
+      color: #505A6E;
+      line-height: .34rem;
+      margin-top: .2rem;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,171 @@
+.container_wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: PingFangSC-Regular;
+
+    .header {
+        background: #ffffff;
+        height: 0.9rem;
+        font-size: 0.3rem;
+        font-family: PingFangSC-Medium;
+        font-weight: 400;
+        line-height: 0.9rem;
+        display: flex;
+
+        &.checked {
+            background: #3A8FFF;
+        }
+
+        div {
+            flex: 1;
+            text-align: center;
+
+            &.checked {
+                color: #ffffff;
+            }
+        }
+
+        .header_title {
+            background: url('~@/assets/icon/health-title.svg') no-repeat;
+            background-size: 100% 100%;
+            color: #ffffff;
+
+            &.checked {
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+    }
+
+    .content {
+        flex: 1;
+        overflow-y: auto;
+
+        .title {
+            height: 1.36rem;
+            display: flex;
+            padding: 0.3rem;
+            background: #F4F5F7;
+
+            .tip {
+                width: 0.8rem;
+                height: 0.8rem;
+                background: #FF5935;
+                position: relative;
+                text-align: center;
+                color: #ffffff;
+                font-weight: bold;
+                line-height: 0.8rem;
+                margin-right: 0.4rem;
+                border-radius: 2px 0 0 2px;
+                font-size: .26rem;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    height: 0;
+                    width: 0;
+                    border-top: 0.4rem solid transparent;
+                    border-bottom: 0.4rem solid transparent;
+                    border-left: 0.2rem solid #FF5935;
+                    right: -0.2rem;
+                }
+            }
+
+            h3 {
+                flex: 1;
+                font-size: 0.3rem;
+                font-weight: 600;
+                color: #172B4D;
+                line-height: .42rem;
+            }
+        }
+
+        .content_questions {
+            padding: 0 0.4rem;
+            background: #ffffff;
+
+            .questions_item {
+                padding: 0.2rem 0;
+                font-size: 0.26rem;
+                line-height: 0.4rem;
+                color: #5E6C84;
+                display: flex;
+
+                .healthyAnswers_container {
+                    padding: 0.3rem 0;
+                    border-top: 1px solid #EFEFEF;
+                    border-bottom: 1px solid #EFEFEF;
+
+
+                    .healthyAnswers_check {
+                        margin: 0.3rem auto 0;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        height: 1.8rem;
+        box-shadow: 0rem 0rem 0.08rem 0rem rgba(0, 0, 0, 0.08);
+        display: -webkit-box;/* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+        display: -moz-box; /* Firefox 17- */
+        display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+        display: -moz-flex; /* Firefox 18+ */
+        display: -ms-flexbox; /* IE 10 */
+        z-index: 100;
+
+        .footerContainer{
+            display: flex;
+            height: 1.2rem;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .service {
+            width: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            img {
+                width: 0.32rem;
+                align-self: center;
+            }
+
+            span {
+                font-size: 0.3rem;
+                font-family: PingFangSC-Semibold;
+                font-weight: bold;
+                color: #595c65;
+            }
+        }
+
+        .bottom_btn {
+            font-size: 0.3rem;
+            font-weight: 400;
+            button{
+                width: 3.3rem;
+                height: 0.88rem;
+                line-height: .8rem;
+                text-align: center;
+                border-radius: 0.1rem;
+                border: 0.01rem solid #EBECF0;
+                color: #ffffff;
+                background: #0065FF;
+            }
+            &.fail {
+                button{
+                    background: #FFFFFF;
+                    color: #5E6C84;
+                }
+            }
+
+            img {
+                width: 0.3rem;
+                margin-right: 0.1rem;
+            }
+        }
+
+    }
+}

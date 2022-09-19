@@ -1,0 +1,72 @@
+.payMethodsContainer{
+  padding: 0 .4rem;
+  background-color: #fff;
+  height: 100%;
+  padding-bottom: 2rem;
+  overflow-y: auto;
+  :global{
+    .am-checkbox .am-checkbox-inner {
+      border:0;
+      background-color:transparent;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border-radius: 0;
+      background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAA21JREFUWEfNmTtMk1EUx//nK7Q8LOEpEl4BkUIgUKUGV2YXEzVhcHISgzsMTg64a4TJycQYGFycWSUUbHmEtiIEKEHkGSrQFvodcz5aUgpYCiW5d/3uOff3nXPP495LuMRgZm1s4ud9jbhDZ24DYAOjjAhWUceMAAgrALwa0ZjONNzWcmeUiPRUl6NUBFwub/kh9G4GPSOgIhVZBvwE/pQB7b3dblu+qOyFAEdGZopMZnpDhOcMWES5xZyJPGsubuRmIyvLDHNmJkwmzVg3EtERPjhAMBjG39197AR2EQofGN8ICDHjYyTMr9vbGzeSgSYFHHV7O4n5HYBiUVaYn4eS4nwDLJUhoGvr29jc3omJrROou81u+/I/PecCDg9zhrXAK2AvRIHVmouq8pvIsphT4To1NxgKY3H5DwKB3di3gcCW7VVHBx2epfhMwKWlpezVjb1BgB8SkQFWXJR/JbBE4fWNbQOUmcXx30qLcp5WVlbuJ847BXhkOd9XgcvIMKGupgK5OVlphYsp290LYnbej8PDiAEZ2Kp/lGjJU4BOl6df3CpwtrqqK7s02Z+Jy72zi1FIDDjsDV3xMicAowHxWdwqcNdluURosaRAirsJ1BkfOMeARiqxkEeitbqiNO17LpklZU8u+Fdl2nokxA2xFHQM6Pzh+QBCl0RrfW1KOTjZ2hf+7pvzH0U3o99xt+FlNG8CUiEi4F+ShJsaaq59351HLPtx2jNvJHMT6LZUHMOCTtdMH0A9koRrqssu/MfXMXF+YSWazPmtw97YS1L4nW7vgtRWCYxUK0S6IaXiGAED+B2ttmpyun3tYP271Nbmxtp0r3cpfVMzc0e1m7QHND7h7dF17ispykdVRemlFKZbaNG/irWNbWga9dKYyzPEwOOaqjIUFuSle61L6dvc2sH84oq0PkPkdHkmATQ31lcjJ/t6SlqqlHv7Qcz4FkRsSgDXJDm3NtVBypsKQ2qze3rWSNo05vYEmWG511IPKXEqDCl54xM+ECGkPqDyLlY6SAiT5HR7BsF4omyaUT5RK1/qlG8WlG+3BFD5htWwosotvwAqf2gSSKWPnbEmQemDu0Aqf/UhkEpfHsVcrfT1W3zTquwFZjyk0lfA8aDKXqInnlPinyFYZwfLMwRw68QzBPCbAC9p5LzKM8Q/sHRj6yxncqoAAAAASUVORK5CYII=');
+      &::after{
+        display: none;
+      }
+    }
+    .am-checkbox.am-checkbox-checked .am-checkbox-inner {
+      background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAzZJREFUWEfNmV9IU1EYwH9nk1Ji9mBJYRQhoQ/10h+KnkqIiCCCFKSpRASVGdSeWhIMIguC60OSRhAkjoj50IsPEZgvgVA9lD1o4UPgKGxWGjYVtxNnc7a53Xt3553c8zS435/f/b6d7/vOuYICViAgXeMbOBB3cxTBPiQ1wFYBHmVOwh/gG4IxJO9dMV5Xz/I2EBBxq+6EFYUWTVbFoA1oArZZ0QUmgD43dPX6RDhf3bwAWzpkRbyM23HJeQHr8zWeS07CvEvwxBXlVu9NMWVmyxSwWZONcXgAbDIzZvF5BBdtwWviuZGeLuCRgCypKk+AXbLo2Kp4T3iGq0MBsZhLMSdggybL1kEIOGnVW4HyAwvQEPKJ6Er9LMClyL1YQ7gU00B4htMrI5kF6NVk9xqkVS/QPUGfuJz+MANwaUM8KzBN9qi5aEzfOMuAqpTEShktwm61Ch5xz1GbKkHLgE2d8qGUZITXqmW75IWgu++6aFX2EoCqQyzC+GqLsF2AqpiXQLXqOAlArybvAjfscqBnp8IDF4/Dzkp4MwpPBxN9W2/dC/qEX6jG/6WcrwX0Vkvvo+DaG6By43+1rgEY/qxrZmLXDDtE8315MO5m2JI3i8K54JQJFcFXH/SNuWIcEl5NqtSqFBdl6cFN/ob2IEQXDN36xVlN9gs4Uww6XbhpuBOCKTU1Gi1Bv/B2yhEku+0GXDVcssZ8Uin+YVScS9xQtwc8ZTD4EX7Nmr+KLXBJNxHRpMk5aTCEtp6Aw7VJ6em/0BGC8E99SBvhVJGeNwV8fAXU7JVaRpB2wiUzzLxpin2nYG91ZsRyQdoNt+QxYrpJPKXgr4ftm/UhiwSnHI4owBCSeqO/vhHko5dwri6zQyhbk/mWEtMyk2eh1oPMZd8WuKRhv6VWlw+kjXAkWp3VYcEI0k44ddBPDAsqjlbHrVyQNsMprOS4pX4VMrCmQ9oNlzWwKshCRn4FeeEY9A7l0fjNO+SyRNbIn4ii0w9NCtLRx85UfB19cFeQjr/6UJCOvjxKpdrR12/pFcGxF5jpkI6+As4Adeol+somkP4ZQsJ+IahBsiXjM4Tgu5SMCXi3ms8Q/wCgVZs8HHxhVwAAAABJRU5ErkJggg==');
+    }
+  }
+  .methodsCheckbox{
+    .payTypeItem{
+      :global{
+        label{
+          width: 100%;
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          padding: 0.4rem 0;
+          align-items: center;
+          border-bottom: 1px solid #EBEEF0;
+        }
+      }
+      .imgCon{
+        display: flex;
+        align-items: center;
+        font-size: .28rem;
+        font-weight: 400;
+        color: #333D4F;
+        img{
+          width:.48rem;
+          height: auto;
+          margin-right: .28rem;
+          box-shadow: 0 0 .12rem 0 rgba(28, 118, 253, 0.15);
+          border-radius: .16rem;
+        }
+      }
+    }
+  }
+  footer{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: .5rem 0;
+    background-color: #fff;
+    .toPay{
+      flex: 1;
+      height: .9rem;
+      border-radius: .1rem;
+      text-align: center;
+      line-height: .9rem;
+      color: #fff;
+      background: linear-gradient(270deg, #0AB88D 0%, #5B8EFF 100%);
+      width: 6.7rem;
+      margin: 0 auto;
+      font-size: .3rem;
+    }
+  }
+}

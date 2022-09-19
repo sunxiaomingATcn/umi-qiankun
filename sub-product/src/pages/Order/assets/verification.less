@@ -1,0 +1,64 @@
+
+.verifyContainer{
+  padding: 0 .4rem;
+  .form{
+    .formItem{
+      display: flex;
+      align-items: center;
+      padding: .38rem 0;
+      span:first-child{
+        width: 1rem;
+        font-size: .28rem;
+        font-weight: 500;
+        color: #333D4F;
+        margin-right: .2rem;
+      }
+      input,a{
+        font-size: .28rem;
+        font-weight: 400;
+        color: #5E6C84;
+        flex: 1;
+      }
+      .getCode{
+        color: #437DFF;
+        padding-left: .2rem;
+        position: relative;
+        font-size: .3rem;
+        &::before{
+          display: block;
+          content: "";
+          width: 1px;
+          height: .28rem;
+          background: #EBECF0;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          margin-top: -.14rem;
+        }
+      }
+    }
+    .formItem:not(:last-child){
+      // border-bottom: 1px solid #EBEEF0;
+    }
+  }
+  footer{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: .5rem 0;
+    background-color: #fff;
+    .toPay{
+      flex: 1;
+      height: .9rem;
+      border-radius: .1rem;
+      text-align: center;
+      line-height: .9rem;
+      color: #fff;
+      background: linear-gradient(270deg, #0AB88D 0%, #5B8EFF 100%);
+      width: 6.7rem;
+      margin: 0 auto;
+      font-size: .3rem;
+    }
+  }
+}

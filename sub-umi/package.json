@@ -1,0 +1,92 @@
+{
+  "name": "baoying-h5",
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "test": "umi test",
+    "lint": "eslint --ext .js src mock tests"
+  },
+  "dependencies": {
+    "@umijs/plugin-sass": "^1.1.1",
+    "antd-mobile": "^2.2.13",
+    "antd-mobile-demo-data": "^0.3.0",
+    "antd-mobile-v5": "npm:antd-mobile@^5.0.0-rc.27",
+    "babel-plugin-import": "^1.12.0",
+    "better-scroll": "^1.15.2",
+    "core-js": "^2.6.11",
+    "crypto-js": "^3.1.9-1",
+    "customize-cra": "^0.2.13",
+    "dva": "^2.5.0-beta.2",
+    "fast-glob": "^3.2.2",
+    "file-saver": "^2.0.5",
+    "globby": "^11.0.0",
+    "html2canvas": "^1.0.0-rc.4",
+    "js-base64": "^3.6.1",
+    "js-cookie": "^2.2.1",
+    "moment": "^2.29.1",
+    "pkg-dir": "^4.2.0",
+    "prop-types": "^15.7.2",
+    "qrcode": "^1.5.0",
+    "rc-dropdown": "^3.2.0",
+    "rc-form": "^2.4.12",
+    "rc-menu": "^9.0.3",
+    "rc-select": "^13.1.0",
+    "react": "^16.7.0",
+    "react-canvas-draw": "^1.1.1",
+    "react-dom": "^16.8.6",
+    "react-file-viewer": "^1.2.1",
+    "react-pdf-js": "^5.1.0",
+    "react-transition-group": "^4.0.1",
+    "react-use": "^17.3.1",
+    "record-sdk": "^1.0.10",
+    "showdown": "^1.9.1",
+    "swiper": "^4.5.0",
+    "uuid": "^8.3.2",
+    "viewerjs": "^1.10.5"
+  },
+  "devDependencies": {
+    "@umijs/plugin-qiankun": "^2.40.0",
+    "@umijs/preset-react": "^1.8.31",
+    "babel-eslint": "^9.0.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "css-loader": "^5.2.6",
+    "eslint": "^5.4.0",
+    "eslint-config-umi": "^1.4.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "node-sass": "^4.14.1",
+    "react-test-renderer": "^16.7.0",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^2.0.0",
+    "umi": "^3.5.34"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ],
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryDirectory": "es",
+          "libraryName": "antd-mobile",
+          "style": "css"
+        }
+      ]
+    ]
+  }
+}

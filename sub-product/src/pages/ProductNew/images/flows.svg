@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>理赔流程</title>
+    <desc>Created with Sketch.</desc>
+    <g id="阿保2.2+" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="保单详情页1" transform="translate(-258.000000, -4974.000000)">
+            <g id="icon-入口" transform="translate(0.000000, 4907.000000)">
+                <g id="编组-29" transform="translate(60.000000, 64.000000)">
+                    <g id="编组-37" transform="translate(178.000000, 3.000000)">
+                        <g id="icon-理赔流程" transform="translate(20.000000, 0.000000)">
+                            <g id="理赔流程">
+                                <g transform="translate(1.000000, 2.000000)">
+                                    <rect id="矩形备份-11" fill="#3A8FFF" opacity="0.2" x="12" y="12" width="36" height="33" rx="4"></rect>
+                                    <rect id="矩形" stroke="#191C20" stroke-width="4" x="18" y="2" width="18" height="16" rx="4"></rect>
+                                    <rect id="矩形备份-10" stroke="#191C20" stroke-width="4" x="2" y="34" width="18" height="16" rx="4"></rect>
+                                    <rect id="矩形备份-11" stroke="#191C20" stroke-width="4" x="34" y="34" width="18" height="16" rx="4"></rect>
+                                    <path d="M45,28 L45,31 C45,32.1045695 44.1045695,33 43,33 C41.8954305,33 41,32.1045695 41,31 L41,28 L13,28 L13,31 C13,32.1045695 12.1045695,33 11,33 C9.8954305,33 9,32.1045695 9,31 L9,28 C9,25.790861 10.790861,24 13,24 L25,24 L25,21 C25,19.8954305 25.8954305,19 27,19 C28.1045695,19 29,19.8954305 29,21 L29,24 L41,24 C43.209139,24 45,25.790861 45,28 Z" id="路径" fill="#398EFF"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

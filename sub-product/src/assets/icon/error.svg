@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon-部份情况有</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-2.1%" y="-18.0%" width="104.8%" height="140.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="阿保2.2+" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="健康告知-投保人" transform="translate(-185.000000, -1269.000000)" fill="#191C20">
+            <g id="Group-2" filter="url(#filter-1)" transform="translate(0.000000, 1234.000000)">
+                <g id="分组-4" transform="translate(130.000000, 0.000000)">
+                    <g id="分组-2" transform="translate(55.000000, 29.000000)">
+                        <g id="icon-部份情况有" transform="translate(0.000000, 6.000000)">
+                            <path d="M15,16.5239888 L4.84228408,26.6817047 C4.42022587,27.103763 3.73985757,27.1076862 3.31608567,26.6839143 C2.89524777,26.2630764 2.89343397,25.5825772 3.31829526,25.1577159 L13.4760112,15 L3.31829526,4.84228408 C2.89623704,4.42022587 2.89231377,3.73985757 3.31608567,3.31608567 C3.73692356,2.89524777 4.4174228,2.89343397 4.84228408,3.31829526 L15,13.4760112 L25.1577159,3.31829526 C25.5797741,2.89623704 26.2601424,2.89231377 26.6839143,3.31608567 C27.1047522,3.73692356 27.106566,4.4174228 26.6817047,4.84228408 L16.5239888,15 L26.6817047,25.1577159 C27.103763,25.5797741 27.1076862,26.2601424 26.6839143,26.6839143 C26.2630764,27.1047522 25.5825772,27.106566 25.1577159,26.6817047 L15,16.5239888 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

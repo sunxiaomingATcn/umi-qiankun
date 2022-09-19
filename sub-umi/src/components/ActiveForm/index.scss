@@ -1,0 +1,121 @@
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify_end {
+    justify-content: flex-end;
+}
+
+.justify_between {
+    justify-content: space-between;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.flex_basis {
+    width: 0%;
+    flex: 1;
+}
+
+.container_wrapper {
+    margin: 0 auto;
+    width: 6.86rem;
+    border-radius: .2rem;
+    padding: 0.5rem .43rem 0.37rem .43rem;
+    background-color: #fff;
+
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color: #cdad7b;
+    }
+
+    li {
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        font-size: 0.24rem;
+        margin-bottom: .2rem;
+
+        .title {
+            width: 2.2rem;
+            color: rgba(89, 92, 101, 1);
+            line-height: 0.46rem;
+        }
+
+        .code {
+            width: 4.12rem;
+        }
+
+        .send {
+            color: rgba(58, 143, 255, 1);
+            line-height: 0.46rem;
+
+            &.disabled {
+                color: #9D9D9D;
+            }
+        }
+
+        input {
+            font-size: 0.24rem;
+            background: #FFE9C6;
+            border-radius: .1rem;
+            height: .7rem;
+            color: #a87f00;
+            padding: 0 .3rem;
+            border: none;
+            outline: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .name {
+        width: 2.52rem;
+    }
+
+    .birth {
+        width:3.28rem;
+        height:0.7rem;
+        color: #cdad7b;
+        background:rgba(255,233,198,1);
+        border-radius: .1rem;
+        padding-left: .3rem;
+        //text-align: center;
+        line-height: .7rem;
+        position: relative;
+        .selected{
+            color: #A87F00;
+        }
+        &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: .25rem;
+            right: .23rem;
+            width: 0.14rem;
+            height: 0.21rem;
+            background: url("../../assets/members/images/right_arrow.png") no-repeat;
+            background-size: 100%;
+        }
+    }
+
+    .submit {
+        margin: .32rem auto 0;
+        width: 3.66rem;
+        height: 0.7rem;
+        background-image: url('../../assets/members/images/submit_button.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        font-size: 0.3rem;
+        font-family: PingFangSC-Regular;
+        font-weight:500;
+        color: #805602;
+    }
+}

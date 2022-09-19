@@ -1,0 +1,195 @@
+.relative {
+  position: relative;
+}
+.flex {
+  display: flex;
+}
+.justify_end {
+  justify-content: flex-end;
+}
+.justify_between {
+  justify-content: space-between;
+}
+.align_center {
+  align-items: center;
+}
+.flex_basis {
+  width: 0%;
+  flex: 1;
+}
+.container_wrapper {
+
+  height: 100%;
+  background-color: #fff;
+  overflow-y: auto;
+  .insurance_order{
+    background: rgba(249,249,249,1);
+    padding: .1rem 0 .1rem .4rem;
+    font-size: 0.26rem;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(25,28,32,1);
+    line-height: 0.4rem;
+  }
+  .insurance_company {
+    padding: .3rem .4rem;
+    .title {
+      padding-top: .1rem;
+      font-size:0.36rem;
+      font-family: PingFangSC-Medium;
+      font-weight:500;
+      color:rgba(25,28,32,1);
+      line-height:0.54rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      /* autoprefixer: off*/
+      -webkit-box-orient: vertical;
+      /* autoprefixer: on*/
+    }
+    .picture {
+      margin-left: .32rem;
+      img {
+        width: 1.66rem;
+        height: 1.44rem;
+      }
+    }
+    .logo {
+      margin-top: .2rem;
+      img{
+        width: 1.96rem;
+      }
+
+      //background: url('http://pic38.nipic.com/20140226/2457331_112835004364_2.jpg') center center/cover no-repeat;
+      //background-position: center center;
+      //background-repeat: no-repeat;
+    }
+  }
+  .line {
+    width: 100%;
+    height: .12rem;
+    background-color: #F4F5F6;
+  }
+  .mark {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width:0.06rem;
+    height:0.3rem;
+    background:rgba(58,143,255,1);
+  }
+  .insurance_number {
+    padding: .27rem .4rem;
+    color:rgba(25,28,32,1);
+    &.grey{
+      color: #b0b3b4;
+    }
+    .number {
+      font-size:0.3rem;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+      line-height:0.46rem;
+    }
+    .electronic {
+      font-size:0.28rem;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+      line-height:0.26rem;
+      a{
+        color:rgba(58,143,255,1);
+      }
+        span{
+            padding-left: .1rem;
+            display: inline-block;
+            width: 0.16rem;
+            height: 0.26rem;
+        }
+      .arrow_right_blue {
+           background:  url('~@/assets/icon/arrow-right-blue.svg') no-repeat;
+           background-size: 100% 100%;
+       }
+    .arrow_right_grey {
+        background:  url('~@/assets/icon/arrow-right-grey.svg') no-repeat;
+        background-size: 100% 100%;
+    }
+    }
+  }
+  .insurance_info {
+      .bottomBorder{
+          border-bottom: 1px solid #F4F5F6;
+      }
+      .renewalItemCon{
+          padding: 0.24rem 0 ;
+          line-height:0.4rem ;
+          .firstItem{
+              padding-bottom: 0.12rem;
+          }
+          .unRenewal{
+              font-size:0.26rem;
+              font-family:PingFangSC-Semibold,PingFangSC;
+              color:rgba(58,143,255,1);
+              font-weight:bold;
+              &.renewal{
+                  color:rgba(0,0,0,1);
+              }
+          }
+      }
+    .person {
+      padding: .24rem .4rem;
+      font-size:0.3rem;
+      font-family:PingFangSC-Medium;
+      font-weight:500;
+      color:rgba(25,28,32,1);
+      line-height:0.42rem;
+      border-bottom: 1px solid #F4F5F6;
+    }
+    .beneficiaryType{
+      padding: .1rem .4rem;
+      font-size: 0.26rem;
+      font-family: PingFangSC-Regular;
+      font-weight: 400;
+      line-height: 0.8rem;
+      .description{
+        text-align: right;
+        padding-left: .2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #595c65;
+      }
+    }
+    .list {
+      padding: .1rem .4rem;
+      font-size:0.26rem;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+      line-height:0.8rem;
+      border-bottom: 1px solid #F4F5F6;
+        .title_bold{font-size:0.26rem;
+            font-family:PingFangSC-Semibold,PingFangSC;
+            font-weight:bold;
+            color:rgba(25,28,32,1);
+            line-height:0.42rem;
+            width: 5.5rem;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+        }
+
+      .title {
+        color:rgba(25,28,32,1);
+      }
+      .description {
+        text-align: right;
+        padding-left: .2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color:rgba(89,92,101,1);
+      }
+
+    }
+  }
+}

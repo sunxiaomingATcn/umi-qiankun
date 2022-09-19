@@ -1,0 +1,175 @@
+.inputContainer{
+    position: relative;
+    padding: 0rem .5rem 0rem .5rem;
+    font-family:PingFang SC;
+    .code,.phone{
+        margin-bottom: .35rem;
+        position: relative;
+        height: 100%;
+        background:rgba(255,252,242,1);
+        border: 1px solid rgba(255,238,169,1);
+        border-radius: .4rem;
+        box-sizing: border-box;
+        padding-left: .8rem;
+        font-weight:400;
+        color:rgba(39,45,50,1);
+        input{
+            background-color: transparent;
+            font-family:PingFang SC;
+            border: 0;
+            font-size:0.26rem;
+            font-weight: 400;
+            color: #272D32;
+        }
+    }
+    .errorInput{
+        border: 1px solid rgba(241,18,24,1);
+    }
+    .phone::before{
+        z-index: 10;
+        display: block;
+        content:' ';
+        position: absolute;
+        top: .27rem;
+        left: .36rem;
+        width:.27rem;
+        height:.28rem;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAMAAAC6CgRnAAAARVBMVEUAAAD/qgD/qhH/rwD/qhH/rhH/rBH/qhD/rw//rg//rhH/rg//rxD/rRD/rRH/rRH/rRD/rRH/rRD/rRL/rRD/rhH/rhHryqpnAAAAFnRSTlMACQ8QHiwuMGNld3uAg5iZq+Tm5/z+wXELIgAAAFBJREFUKM/t0jESgCAMRNEVEBVRUCH3P6pF0kAcT8Bv32y3ALA81HfN4BLFvS3SKZYr+moeNuzXtsCt2myR+5VJ76zjTLPT/zwoiX38+vYAXjlvDUHx6ubQAAAAAElFTkSuQmCC');
+    }
+    .artVerifyCode{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .code::before{
+        z-index: 10;
+        display: block;
+        content:' ';
+        position: absolute;
+        top: .27rem;
+        left: .36rem;
+        width:.27rem;
+        height:.28rem;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAMAAAC6CgRnAAABAlBMVEUAAAD/AAD//wD/gAD/qgD/mQD/qgD/tgD/nwD/nyD/qhX/nwD/rwD/qgD/rgD/sw3/pgv/qgv/pwr/rRD/pxD/qg//qhD/rQ7/qw3/qxD/rRD/qw//rA7/rBH/rBD/rA//rg7/rw7/rhD/rw//rQ//rRH/rg//rxH/rhD/rhD/rRH/rhH/rxH/rRD/rg//rQ//rxD/rRD/rRL/rQ//rg//rRD/rBH/rhH/rhH/rRD/rRH/rhD/rRD/rhD/rRD/rRH/rBH/rBD/rRD/rhH/rRH/rBH/rhH/rA//rQ//rRD/rRD/rRD/rRH/rRH/rRH/rRD/rRD/rRD/rRD/rhD/rhH/rhEKNEt2AAAAVXRSTlMAAQECAwUGBwgIDBAQEhMUFxgaHyAhMDg9QEFGR0pQU1hZX2NkZ2hsbnF2d3mAiImPkp+lpru/v8DEx8zNz9DT1dvb3+Dh4ufn7O3y9fb3+Pn7/P3+m8/AsAAAANJJREFUKM+t0VtTgkAAhmGKNO1sZkZ2MMy0tHOk2cGMLDUCyt7//1eaWvZil2Gmmr6rd3i4WBbDkFs+vg9e7w4XjPjKL/A+huFGjLbHH2erZtpyCC2N5kdUvmPilP60agdcRDXVxVbNYU1mnXPVeszKtLhSzSUrs0jnp5bOPZHPRdvkeiklxTzx0eYdTQrbJ3TVPb5RE3bJun5LO7RFdFjRrcjtb8wuJdoMD4k2h/vvlvFuks9ZWPzb98XNYUu3PVoidsFXF0A1eqvxrP+/QfPr+SfLNz4FOhh4TQAAAABJRU5ErkJggg==');
+    }
+    .submit{
+        width:5.65rem;
+        height:0.85rem;
+        font-size: .3rem;
+        background:linear-gradient(-90deg,rgba(255,154,24,1) 0%,rgba(255,197,13,1) 100%);
+        box-shadow: 0rem .08rem .2rem rgba(255,172,20,0.3);
+        border-radius:0rem;
+        border-radius: .425rem;
+        text-align: center;
+        line-height: .85rem;
+        color: #fff;
+        font-weight:500;
+    }
+
+    .error{
+        font-size:0.22rem;
+        font-weight:300;
+        margin-top: .06rem;
+        color:rgba(240,1,7,1);
+        padding-left: .8rem;
+        position: absolute;
+        top: .8rem;
+        left: 0;
+        &::before{
+            display: block;
+            content:' ';
+            position: absolute;
+            top: .01rem;
+            left: .48rem;
+            width:.21rem;
+            height:.23rem;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAMAAACeyVWkAAAA4VBMVEUAAADZLxzRJx/YJxfYJx/VKh7bKh7WKR3VKyDaKyDbKSDYKx7WLCHYKxzaLR/YLR/ZKiDZLB7bLB/ZLB/aLB/bLR/ZLB/aLSDZKyDZKx/ZKx/ZKx/YLB/aLB/ZLCDaLB/ZLCDZLCDZLCDZLCDaLCDZLB/YKx/ZLB/ZKx/ZLB/YLB/aLB/ZLB/aLB/ZLCDaLB/ZKx/aKx/ZLCDZLCDZMCPeSj/eTEHhXVTiX1XjZFzjZV3kamLmeHHne3TogXrog33piILpioTqjojqj4nrkIrrkYvrkoz0ysf42df65OL///+/DbSVAAAAM3RSTlMAGyEhISsrLDAwODtFSFpbeHmMkpKUlaWms7a3v7/BzM/Q0dLa5+3w8/T19fb2+fz9/f7IAxWBAAAAs0lEQVQY03WR5xKCMBCET8WKvWPvvQd7F7Hk/R9IkByJM7i/vtvZmVz2AL6Ss80B6VWTAeDyVwjTQpHQjI0JVzdimdE5ETUJm6ZvRH7VcRluiQ3b945RHiCEEZ0+GE0lSKF7pzpiAuqIGtUQi9BHvNArYgvsp0/0jNjm2QM98mwNcflaIRYgjajuVcQ43/dm7zDzAJQZr58bRjnjx17HHpw7+9OveAuiuIUbyZnG0Lxb0Bo/Yd1E/YyhaOMAAAAASUVORK5CYII=');
+        }
+    }
+    .artVerifyCode{
+        div{
+            width:1.64rem;
+            height:0.6rem;
+            border:0px !important;
+            font-size:0.22rem;
+            font-weight:400;
+            line-height:0.6rem;
+        }
+        margin-top: .1rem;
+        margin-right: .3rem;
+    }
+
+    :global{
+        .am-list-item.am-input-item{
+            height: 100%;
+            min-height: .8rem !important;
+        }
+
+        .am-list-item.am-input-item, .am-list-item{
+            padding-left: 0;
+            min-height: 1rem;
+        }
+
+        .am-list-item .am-list-line,.am-list-item {
+            background-color: transparent;
+        }
+
+        .am-list-item .am-list-line {
+            border-bottom: 0px !important;
+            &:after{
+                width: 0px !important;
+            }
+        }
+    }
+    
+}
+.container{
+    height: 100%;
+    background: #f8f8f8;
+    max-width: 750px;
+    margin: 0 auto;
+    :global {
+        .am-activity-indicator {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+input::-webkit-input-placeholder{
+    font-weight: 300;
+    color: #A8A7A7;
+    padding-top: 2px;
+    line-height: 1.5;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    font-weight: 300;
+    color: #A8A7A7;
+    line-height: 1.5;
+
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    font-weight: 300;
+    color: #A8A7A7;
+    padding-top: 2px;
+    line-height: 1.5;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    font-weight: 300;
+    color: #A8A7A7;
+    padding-top: 2px;
+    line-height: 1.5;
+}

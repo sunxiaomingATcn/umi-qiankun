@@ -1,0 +1,82 @@
+@keyframes rotateWithBoost {
+    0% {
+      transform: rotate(0deg);
+    }
+    60% {
+      transform: rotate(180deg);
+    }
+    90%,
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes loader13dot1 {
+    0%,
+    45% {
+      cx: 6;
+      cy: 6;
+    }
+    55%,
+    80% {
+      cx: 2;
+      cy: 2;
+    }
+    90%,
+    100% {
+      cx: 6;
+      cy: 6;
+    }
+  }
+  @keyframes loader13dot2 {
+    0%,
+    45% {
+      cx: 6;
+      cy: 24;
+    }
+    55%,
+    80% {
+      cx: 2;
+      cy: 28;
+    }
+    90%,
+    100% {
+      cx: 6;
+      cy: 24;
+    }
+  }
+  
+  @keyframes loader13dot3 {
+    0%,
+    45% {
+      cx: 24;
+      cy: 6;
+    }
+    55%,
+    80% {
+      cx: 28;
+      cy: 2;
+    }
+    90%,
+    100% {
+      cx: 24;
+      cy: 6;
+    }
+  }
+  
+  @keyframes loader13dot4 {
+    0%,
+    45% {
+      cx: 24;
+      cy: 24;
+    }
+    55%,
+    80% {
+      cx: 28;
+      cy: 28;
+    }
+    90%,
+    100% {
+      cx: 24;
+      cy: 24;
+    }
+  }

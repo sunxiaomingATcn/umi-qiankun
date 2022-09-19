@@ -1,0 +1,97 @@
+.my-node-enter {
+    opacity: 0;
+}
+
+.my-node-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+
+.my-node-exit {
+    opacity: 1;
+}
+
+.my-node-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+}
+
+.my-node-exit-done {
+    opacity: 0;
+    display: none;
+}
+
+.cover-enter{
+    opacity: 0;
+}
+.cover-active {
+    opacity: 1;
+    transition: all 250ms;
+}
+
+.cover-exit {
+    opacity: 1;
+}
+
+.cover-exit-active {
+    opacity: 0;
+    transition: opacity 100ms;
+}
+
+.cover-enter-done {
+    opacity: 0;
+    display: none;
+}
+
+
+/**
+ * 右侧淡入，右侧淡出
+ */
+.forward-from-right-enter {
+    z-index: 2;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.forward-from-right-enter-active {
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 500ms;
+}
+
+.forward-from-right-exit {
+    z-index: 1;
+    opacity: 1;
+}
+
+.forward-from-right-exit-active {
+    z-index: 1;
+    opacity: .3;
+    transition: all 500ms;
+}
+
+.back-to-right-enter {
+    z-index: 1;
+    opacity: .3;
+}
+
+.back-to-right-enter-active {
+    z-index: 1;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 500ms;
+}
+
+.back-to-right-exit {
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.back-to-right-exit-active {
+    z-index: 2;
+    opacity: 0;
+    transform: translate(100%);
+    transition: all 500ms;
+}

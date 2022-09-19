@@ -1,0 +1,63 @@
+@keyframes toDis{
+  from{
+    right: 15px;
+  }
+  to{
+    right: -25px;
+  }
+}
+@keyframes toNormal{
+  from{
+    right: -25px;
+  }
+  to{
+    right: 15px;
+  }
+}
+
+.con{
+  position: fixed;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, #0065FF 0%, #437DFF 100%);
+  box-shadow: 0px 4px 12px 0px rgba(0, 101, 255, 0.56);
+  z-index: 999;
+  animation: toNormal;
+  animation-duration: 200ms;
+  .dis{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+  }
+  >span{
+    font-size: .24rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #FFFFFF;
+  }
+  >img{
+    position: absolute;
+    right: -6px;
+    top: -2px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.conDis{
+  @extend .con;
+  right: -25px;
+  animation: toDis;
+  animation-duration: 200ms;
+}
+.ringCon{
+  position: absolute;
+}

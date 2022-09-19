@@ -1,0 +1,12 @@
+.lineCon {
+  width: 100%;
+  height: 1px;
+  box-sizing: border-box;
+  .realLine{
+    transform-origin: 50% 100%;
+    transform: scaleY(0.5);
+    width: 100%;
+    height: 1px;
+    background-color: #EBEEF0;
+  }
+}

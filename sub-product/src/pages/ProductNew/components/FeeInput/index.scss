@@ -1,0 +1,19 @@
+.item {
+  padding: 0;
+  :global {
+    .am-list-content,
+    .am-list-extra {
+      font-size: 0.26rem !important;
+      font-weight: 400 !important;
+      color: #172b4d !important;
+      line-height: 0.45rem !important;
+    }
+    .am-list-extra {
+      white-space: normal!important;
+      text-overflow: clip!important;
+    }
+    .am-list-line {
+      padding: 0;
+    }
+  }
+}

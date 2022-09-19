@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>典型案例icon</title>
+    <defs>
+        <filter x="-44.4%" y="-46.2%" width="188.9%" height="192.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.364705882   0 0 0 0 0.219607843  0 0 0 0.302037806 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#FE8B72" offset="0%"></stop>
+            <stop stop-color="#FF5630" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="展业端H5UI-20210622" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2-2-1产品详情" transform="translate(-165.000000, -2212.000000)" fill-rule="nonzero">
+            <g id="foot" transform="translate(0.000000, 2181.000000)">
+                <g id="其他" transform="translate(44.000000, 31.000000)">
+                    <g id="典型案例icon" transform="translate(121.000000, 0.000000)">
+                        <g filter="url(#filter-1)" transform="translate(9.000000, 10.000000)">
+                            <path d="M25.5789474,7.86800001 L24.8826316,7.86800001 L24.8826316,4.116 C24.8826316,3.34280136 24.2464046,2.71600001 23.4615789,2.71599999 L9.64894738,2.71599999 L8.85315788,0.854000011 C8.63076429,0.336693084 8.11602975,0.000457868433 7.54578947,0 L1.42105264,0 C0.636226939,0 0,0.626801355 0,1.40000001 L0,23.8 C0,24.5731986 0.636226939,25.2 1.42105264,25.2 L25.5789474,25.2 C26.3637731,25.2 27,24.5731986 27,23.8 L27,9.26799999 C27,8.49480135 26.363773,7.86800001 25.5789474,7.86800001 Z" id="形状" fill="url(#linearGradient-2)"></path>
+                            <path d="M11.7394737,20.65 L5.31315789,20.65 C4.73325891,20.65 4.26315789,20.179899 4.26315789,19.6 C4.26315789,19.020101 4.73325891,18.55 5.31315789,18.55 L11.7394737,18.55 C12.3193727,18.55 12.7894737,19.020101 12.7894737,19.6 C12.7894737,20.179899 12.3193727,20.65 11.7394737,20.65 Z" id="路径" fill="#FFFFFF"></path>
+                            <path d="M22.7368421,7.86800001 L12.7894737,7.86800001 C12.2261859,7.85405765 11.7244655,7.51354843 11.5105263,6.99999999 L10.558421,4.77399999 L22.7368421,4.77399999 L22.7368421,7.86800001 Z" id="路径" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

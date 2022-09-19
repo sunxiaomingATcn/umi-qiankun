@@ -1,0 +1,41 @@
+.container{
+    width: 100%;
+    padding-bottom: .3rem;
+    background-color: #fff;
+}
+.payback_detail{
+    padding-top: 1rem;
+    background-color: #fff;
+    img{
+        width: 2.16rem;
+        margin: 1.04rem auto .34rem;
+    }
+    .payback_detail_msg{
+        font-size: 0.36rem;
+        font-weight: 500;
+        color: #172B4D;
+        line-height: 0.5rem;
+                &.fail{
+            color: rgba(89,92,101,1);
+        }
+    }
+    .payback_success_des{
+        font-size: 0.32rem;
+        font-weight: 400;
+        color: #5E6C84;
+        line-height: 0.44rem;
+        margin-top: .18rem;
+    }
+    .payback_detail_tip{
+        font-size:0.26rem;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:#595C65;
+        line-height:0.42rem;
+        padding-top: 0.1rem;
+        p{
+            text-align: center;
+        }
+
+    }
+}

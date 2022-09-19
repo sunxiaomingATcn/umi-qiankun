@@ -1,0 +1,90 @@
+.search {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    input::-webkit-input-placeholder{   /* 使用webkit内核的浏览器 */
+        color: #c1c6ce;
+    }
+    .hidden {
+        :global {
+            .am-pull-to-refresh-indicator {
+                display: none;
+            }
+        }
+    }
+    .finish {
+        height: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: grey;
+    }
+    .emptyValue {
+        font-size: 0.3rem;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(23, 43, 77, 0.85);
+        text-align: center;
+        margin-top: 0.4rem;
+    }
+    .searchHeader {
+        width: 100%;
+        height: 0.94rem;
+        background: #ffffff;
+        border-radius: 0rem 0rem 0.4rem 0.4rem;
+        position: relative;
+        display: flex;
+        .searchInput {
+            width: 5.94rem;
+            height: 0.8rem;
+            background: rgba(235, 236, 240, 0.5);
+            border-radius: 0.2rem;
+            margin-top: 0.12rem;
+            margin-left: 0.3rem;
+            font-size: 0.26rem;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #172B4d;
+            padding-left: 0.7rem;
+        }
+        .searchIcon {
+            position: absolute;
+            left: 0.6rem;
+            top: 0.4rem;
+            width: 0.24rem;
+            height: 0.24rem;
+            color: #8993a4;
+        }
+        .cancel {
+            display: inline-block;
+            margin-top: 0.32rem;
+            margin-left: 0.3rem;
+            font-size: 0.28rem;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #0065ff;
+        }
+        .clear {
+            position: absolute;
+            left: 5.72rem;
+            top: 0.36rem;
+            width: 0.32rem;
+            height: 0.32rem;
+        }
+    }
+    .searchContainer {
+        padding-right: 0.68rem;
+        padding-left: 0.3rem;
+        .searchItem {
+            width: 100%;
+            height: 0.98rem;
+            line-height: 0.98rem;
+            font-size: 0.28rem;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(23, 43, 77, 0.85);
+            border-bottom: 0.01rem solid #ebecf0;
+        }
+    }
+}

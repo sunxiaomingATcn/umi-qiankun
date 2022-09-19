@@ -1,0 +1,36 @@
+.radio_button_wrapper {
+    height: 0.66rem;
+    background: rgba(235, 236, 240, 0.5);
+    border-radius: 0.1rem;
+    min-width: 1.2rem;
+    width: auto;
+    line-height: 0.56rem;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.26rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #172b4d;
+    &.radio_button_wrapper_checked {
+        background: rgba(0, 101, 255, 0.15);
+        color: #0065FF;
+    }
+}
+
+.radio_button_wrapper .radio-inner,
+.radio_button_wrapper input[type='checkbox'],
+.radio_button_wrapper input[type='radio'] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}

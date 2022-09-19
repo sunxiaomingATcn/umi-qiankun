@@ -1,0 +1,256 @@
+.performance {
+  width: 100%;
+  height: 100%;
+  background: #f4f5f7;
+  .header {
+    width: 100%;
+    height: 0.8rem;
+    border-radius: 0rem 0rem 0.4rem 0.4rem;
+    background: #fff;
+    padding: 0 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.26rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #5e6c84;
+    .right {
+      img {
+        margin-left: 0.14rem;
+        width: 0.2rem;
+        height: 0.2rem;
+      }
+    }
+  }
+  .item {
+    // width: 100%;
+    min-height: 3.3rem;
+    background: #ffffff;
+    border-radius: 0.2rem;
+    margin: 0 0.3rem;
+    margin-top: 0.2rem;
+    padding: 0 0.3rem;
+    .line {
+      width: 100%;
+      height: 0.02rem;
+      border: 0.01rem solid #ebecf0;
+    }
+    .top {
+      min-height: 1.06rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .right {
+        display: flex;
+        align-items: center;
+        .image {
+          width: auto;
+          height: 0.48rem;
+          // background: #ffcfcf;
+        }
+        .name {
+          font-size: 0.32rem;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #172b4d;
+          margin-left: 0.2rem;
+        }
+      }
+      .status {
+        min-width: 1.04rem;
+        height: 0.44rem;
+        background: rgba(94, 108, 132, 0.1);
+        border-radius: 0.04rem;
+        border: 0.01rem solid #5e6c84;
+        font-size: 0.24rem;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #5e6c84;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .bottom {
+      width: 100%;
+      .one,
+      .two,
+      .three {
+        margin-top: 0.2rem;
+        height: 0.4rem;
+      }
+      .one {
+        margin-top: 0.28rem;
+      }
+      .two {
+        height: auto;
+        display: flex;
+      }
+      .content {
+        width: 50%;
+        display: inline-block;
+        text-align: left;
+        font-size: 0.28rem;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(23, 43, 77, 0.75);
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+      }
+    }
+  }
+  .search {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    .mask {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 0.5;
+      left: 0;
+      top: 0;
+    }
+    .container {
+      position: fixed;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 0.4rem 0.4rem 0rem 0rem;
+      left: 0;
+      bottom: 0;
+      .searchheader {
+        width: 100%;
+        height: 1.04rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        font-size: 0.32rem;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #172b4d;
+        .clear {
+          width: 0.24rem;
+          height: 0.24rem;
+          position: absolute;
+          right: 0.4rem;
+          top: 0.4rem;
+        }
+      }
+      .searchValue {
+        padding: 0 0.6rem;
+        width: 100%;
+        height: 100%;
+        .title {
+          font-size: 0.32rem;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #172b4d;
+          margin: 0.3rem 0;
+        }
+        .leftDate,
+        .rightDate {
+          width: 2.8rem;
+          height: 0.8rem;
+          background: rgba(235, 236, 240, 0.5);
+          border-radius: 0.1rem;
+          font-size: 0.26rem;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: rgba(137, 147, 164, 0.5);
+          line-height: 0.8rem;
+          text-align: center;
+          display: inline-block;
+          :global {
+            .am-list-item {
+              background-color: transparent;
+              padding-left: 0;
+              .am-list-line {
+                display: block;
+                .am-list-extra {
+                  text-align: center;
+                  color: #172b4d;
+                  font-size: 0.26rem;
+                  font-weight: 400;
+                  padding: 0.2rem;
+                }
+              }
+            }
+          }
+        }
+        .tag {
+          width: 1.6rem;
+          height: 0.8rem;
+          background: rgba(0, 101, 255, 0.15);
+          border-radius: 0.1rem;
+          font-size: 0.26rem;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          line-height: 0.8rem;
+          text-align: center;
+          color: #0065ff;
+        }
+        .ipt {
+          width: 6.3rem;
+          height: 0.8rem;
+          background: rgba(235, 236, 240, 0.5);
+          border-radius: 0.1rem;
+          font-size: 0.26rem;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: rgba(137, 147, 164, 0.5);
+          padding-left: 0.2rem;
+        }
+        .btn {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 0.5rem;
+          a {
+            width: 3rem;
+            height: 0.88rem;
+            border-radius: 0.1rem;
+            border: 0.01rem solid #ebecf0;
+          }
+        }
+      }
+    }
+  }
+  .placeholder {
+    color: rgba(137, 147, 164, 0.5);
+  }
+  .empty {
+    margin-top: 1.6rem;
+    margin-left: 2.02rem;
+    width: 2.8rem;
+    height: 2.5rem;
+  }
+  .emptyValue {
+    font-size: 0.3rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(23, 43, 77, 0.85);
+    text-align: center;
+    margin-top: 0.4rem;
+  }
+  .finish {
+    height: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+  }
+  .hidden {
+    :global {
+      .am-pull-to-refresh-indicator {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.detailContainer{
+  background: #F4F5F7;
+  padding: .2rem .3rem;
+  overflow-y: auto;
+  .detailCard{
+    &:not(:last-child){
+      margin-bottom: .5rem;
+    }
+    .item{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: .26rem;
+      span{
+        max-width: 4rem;
+        word-break: break-word;
+        text-align: right;
+      }
+      &:not(:last-child){
+        margin-bottom: .3rem;
+      }
+      .name{
+        font-size: 0.26rem;
+        font-weight: 400;
+        color: #5E6C84;
+      }
+      .content{
+        font-size: 0.26rem;
+        font-weight: 400;
+        color: #172B4D;
+      }
+
+    }
+  }
+  .viewElectronicPolicy{
+    width: 3rem;
+    height: 0.8rem;
+    border-radius: 0.1rem;
+    border: 0.01rem solid #0065FF;
+    margin: .4rem auto;
+    line-height: .8rem;
+    text-align: center;
+    font-size: 0.3rem;
+    font-weight: 400;
+    color: #0065FF;
+  }
+  .orderNo{
+    display: flex;
+    justify-content: space-between;
+    padding:  12px 0;
+  }
+  .payment{
+    width: 100%;
+    height: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.3rem;
+    :global{
+      .am-button{
+        padding: 0 0.2rem;
+        height: 0.8rem;
+        border-radius: 0.1rem;
+        line-height: 0.8rem;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 0.32rem;
+      }
+    }
+  }
+}
+.detailNoCollapseItem{
+  font-size: 0.3rem;
+  font-weight: 500;
+  color: #172B4D;
+  padding-right: 0.5rem;
+  background: #FFFFFF;
+  border-radius: 0.2rem;
+  padding: 0.3rem;
+  margin-bottom: .2rem;
+}

@@ -1,0 +1,62 @@
+.payback_detail {
+  background: #f4f5f7;
+  .result {
+    padding: 0.5rem 0;
+    background: #fff;
+    img {
+      width: 3.18rem;
+      margin: 0 auto;
+      display: block;
+    }
+    p {
+      font-size: 0.36rem;
+      font-weight: 500;
+      color: #172b4d;
+      line-height: 0.5rem;
+      text-align: center;
+    }
+    margin-bottom: 0.16rem;
+  }
+  .order_detail {
+    background: #fff;
+    padding: 0 0.3rem;
+    padding-top: 0.3rem;
+    .order_item {
+      font-size: 0.28rem;
+      font-weight: 400;
+      color: #172b4d;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.3rem 0;
+      border-bottom: 1px solid #ebecf0;
+      span:last-child {
+        font-weight: 500;
+        color: #172b4d;
+      }
+    }
+  }
+}
+.error {
+  .container {
+    width: 100%;
+    padding-bottom: 0.3rem;
+    background-color: #fff;
+  }
+  .payback_detail {
+    padding-top: 1rem;
+    background-color: #fff;
+    img {
+      width: 2.16rem;
+      margin: 1.04rem auto 0.34rem;
+    }
+    .payback_detail_msg {
+      font-size: 0.36rem;
+      font-weight: 500;
+      color: #172b4d;
+      line-height: 0.5rem;
+      &.fail {
+        color: rgba(89, 92, 101, 1);
+      }
+    }
+  }
+}

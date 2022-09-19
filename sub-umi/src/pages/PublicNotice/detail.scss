@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+  .title{
+    font-size: 0.44rem;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #172B4D;
+  }
+  .time{
+    margin-top: 0.2rem;
+    font-size: 0.24rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #B3BAC5;
+  }
+  .content{
+    text-align: justify;
+    word-break: break-all;
+    white-space:pre-wrap;
+    text-indent:0.16rem;
+    line-height: 26px;
+    margin-top: 0.2rem;
+    font-size: 0.32rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #5E6C84;
+  }
+}

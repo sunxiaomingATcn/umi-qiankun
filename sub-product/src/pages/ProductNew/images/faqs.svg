@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>常见问题icon</title>
+    <defs>
+        <filter x="-44.4%" y="-46.0%" width="188.9%" height="195.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.521568627   0 0 0 0 0.458823529   0 0 0 0 0.850980392  0 0 0 0.357189685 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#9B8CEB" offset="0%"></stop>
+            <stop stop-color="#9E8FED" offset="100%"></stop>
+        </linearGradient>
+        <path d="M4.61385768,19.0975093 L4.5,24.4079764 C4.50753479,25.0389624 4.85658031,25.6146356 5.40841413,25.906204 C5.96024796,26.1977725 6.62547066,26.1580008 7.13970037,25.8026956 L18.9,18.9 L4.61385768,19.0975093 Z" id="path-3"></path>
+        <linearGradient x1="4.5%" y1="55.6%" x2="100%" y2="55.6%" id="linearGradient-4">
+            <stop stop-color="#75ABFE" offset="0%"></stop>
+            <stop stop-color="#0065FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#9B8CEB" offset="0%"></stop>
+            <stop stop-color="#6554C0" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-6" x="0" y="0" width="27" height="21.6" rx="4"></rect>
+    </defs>
+    <g id="展业端H5UI-20210622" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2-2-1产品详情" transform="translate(-281.000000, -2212.000000)">
+            <g id="foot" transform="translate(0.000000, 2181.000000)">
+                <g id="其他" transform="translate(44.000000, 31.000000)">
+                    <g id="常见问题icon" transform="translate(237.000000, 0.000000)">
+                        <g filter="url(#filter-1)" transform="translate(9.000000, 10.000000)">
+                            <g id="icon-4" fill-rule="nonzero">
+                                <g id="路径_316">
+                                    <use fill="#75ABFE" xlink:href="#path-3"></use>
+                                    <use fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                                </g>
+                                <g id="矩形_58">
+                                    <use fill="url(#linearGradient-4)" xlink:href="#path-6"></use>
+                                    <use fill="url(#linearGradient-5)" xlink:href="#path-6"></use>
+                                </g>
+                            </g>
+                            <circle id="椭圆形" fill="#FFFFFF" cx="7.2" cy="10.8" r="1.8"></circle>
+                            <circle id="椭圆形备份" fill="#FFFFFF" cx="13.5" cy="10.8" r="1.8"></circle>
+                            <circle id="椭圆形备份-2" fill="#FFFFFF" cx="19.8" cy="10.8" r="1.8"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

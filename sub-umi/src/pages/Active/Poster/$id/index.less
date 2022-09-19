@@ -1,0 +1,177 @@
+@import './theme.less';
+.posterContainer{
+    padding-bottom: .88rem;
+    background-color: #fff;
+    .posterForm{
+        position:absolute;
+        top: 6.31rem;
+        left: .32rem;
+        width:6.86rem;
+        background:rgba(255,255,255,1);
+        box-shadow: 0rem .07rem .43rem rgba(162,167,187,0.2);
+        border-radius: .2rem;
+        padding: .5rem .53rem .71rem .53rem;
+        h3{
+            font-size:0.34rem;
+            font-weight:600;
+            // color:rgba(254,115,22,1);
+            line-height:0.41rem;
+            text-align: center;
+            position: relative;
+            margin-bottom: .55rem;
+            span{
+                position: relative;
+                z-index: 1;
+            }
+        }
+        h3:after{
+            display: block;
+            content: "";
+            width:4.94rem;
+            height:0.17rem;
+            // background:rgba(255,233,226,1);
+            border-radius: .09rem;
+            position: absolute;
+            top: .3rem;
+            left: .45rem;
+            z-index: 0;
+        }
+    }
+    .detail{
+        img{
+            width: 100%;
+        }
+    }
+    footer{
+        padding: .37rem 0;
+        line-height: .3rem;
+        font-size: .22rem;
+        color: #222246;
+        text-align: center;
+        background-color: #F5F6F7;
+        img{
+            width: .21rem;
+            margin-right: .06rem;
+            vertical-align: middle;
+        }
+        p:last-child{
+            margin-top: .12rem;
+        }
+    }
+    :global{
+        .am-list-item.am-input-item,.am-list-line,.am-list-item .am-input-control{
+            padding-left: 0;
+            padding-right:0;
+            min-height: auto;
+            height: auto;
+            line-height:normal;
+            font-size: initial;
+            border-bottom: 0 !important;
+        }
+        .am-list-line{
+            padding-right: 3px;
+        }
+        .am-list-line::after{
+            width: 0 !important;
+        }
+    }
+    .FormList{
+        font-family:PingFang SC;
+        li{
+            margin-bottom: .24rem;
+            font-size:0.24rem;
+            position: relative;
+            :global{
+                .am-list-line{
+                    text-align: center;
+                    font-size:0.24rem;
+                    border-radius: .3rem;
+                    height: .6rem;
+                    line-height:normal;
+                    input{
+                        text-align: center;
+                        font-size:0.24rem;
+                        width: 100%;
+                        line-height:normal;
+                    }
+                }
+            }
+            .errTips{
+                color: red;
+                position: absolute;
+                top: .6rem;
+                left: 0;
+                z-index: 1000;
+            }
+
+            .picker{
+                div{
+                    width: 100%;
+                    line-height:normal;
+                }
+                text-align: center;
+                border-radius: .3rem;
+                display: flex;
+                height: .6rem;
+                align-items: center;
+            }
+        }
+        li.formItemChilds{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        li.formItemChilds>div{
+            line-height:normal;
+            border-radius: .3rem;
+            width:2.75rem;
+            position: relative;
+        }
+        li.formItemSingle{
+            width:5.8rem;
+        }
+    }
+    .tips{
+        font-weight:400;
+        color:rgba(153,153,153,1);
+        line-height:0.3rem;
+        color:#999999;
+        font-size: .22rem;
+        text-align: left;
+        margin-bottom: .32rem;
+        text-align: justify;
+    }
+}
+
+.submit{
+    width:5.8rem;
+    height:0.88rem;
+    border-radius: .44rem;
+    text-align: center;
+    margin: 0 auto;
+    font-size:0.38rem;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:0.9rem;
+}
+
+.gotTop{
+    width: 100%;
+    height:0.88rem;
+    text-align: center;
+    margin: 0 auto;
+    font-size:0.38rem;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:0.9rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.triangle{
+    border: .09rem solid transparent;
+    position: absolute;
+    top: .25rem;
+    right: .42rem;
+}

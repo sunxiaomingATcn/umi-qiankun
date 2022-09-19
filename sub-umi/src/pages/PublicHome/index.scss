@@ -1,0 +1,26 @@
+.con {
+  :global {
+
+
+    .am-tab-bar-bar .am-tab-bar-tab-title{
+      font-size: .22rem;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #172B4D;
+      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      margin-top: .08rem;
+    }
+    .am-tabs-tab-bar-wrap{
+      z-index: 100;
+      background-color: rgba(255, 255, 255, 0);
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    }
+    .am-tab-bar-bar::before {
+      background-color: white!important;
+      // box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    }
+    .am-tab-bar-item{
+      position: relative;
+    }
+  }
+}

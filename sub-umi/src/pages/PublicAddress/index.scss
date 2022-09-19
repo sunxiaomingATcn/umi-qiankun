@@ -1,0 +1,206 @@
+.container {
+  min-height: 100%;
+  background-color: white;
+  :global {
+    .am-list-item .am-input-control input {
+      font-size: 14px;
+      caret-color: #0065ff;
+    }
+    .am-list-item {
+      background-color: rgba(235, 236, 240, 0.5);
+      border-radius: 0.2rem;
+    }
+  }
+  padding: 0.3rem;
+  box-sizing: border-box;
+  .searchCon {
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    > div {
+      flex: 1;
+      input::-webkit-input-placeholder{   /* 使用webkit内核的浏览器 */
+        color: #c1c6ce;
+      }
+    }
+    > span {
+      margin-left: 0.3rem;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #0065ff;
+    }
+  }
+  .locationCon {
+    margin-top: 0.4rem;
+    .errorCon{
+      display: flex;
+      align-items: center;
+      .errorItem{
+        height: 0.58rem;
+        width: 1.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        background: #F5F5F5;
+        border-radius: 3px;
+        border: 1px solid #EBECF0;
+        > img {
+          width: 0.24rem;
+          height: 0.3rem;
+        }
+        > span {
+          font-size: 0.28rem;
+          margin-left: 0.04rem;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: rgba(23, 43, 77, 0.85);
+        }
+      }
+      >span{
+        margin-left: 0.18rem;
+        font-size: 0.26rem;
+        font-family: PingFang-SC-Regular, PingFang-SC;
+        font-weight: 400;
+        color: #8993A4;
+      }
+    }
+
+    .cityItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      min-width: 1.48rem;
+      width: fit-content;
+      padding: 0 0.08rem;
+      height: 0.58rem;
+      background: #ffffff;
+      border-radius: 0.06rem;
+      border: 1px solid #ebecf0;
+      > img {
+        width: 0.24rem;
+        height: 0.3rem;
+      }
+      > span {
+        font-size: 0.28rem;
+        margin-left: 0.04rem;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #172b4d;
+      }
+    }
+  }
+
+  .hotCon {
+    margin-top: 0.4rem;
+    > span {
+      font-size: 0.24rem;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #8993a4;
+    }
+    .hotContent {
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: space-around;
+      box-sizing: border-box;
+      padding-right: 0.18rem;
+      div {
+        margin-top: 0.2rem;
+        margin-right: 0.2rem;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        min-width: 1.48rem;
+        padding: 0 0.08rem;
+        height: 0.58rem;
+        background: #ffffff;
+        border-radius: 0.06rem;
+        border: 1px solid #ebecf0;
+        font-size: 0.28rem;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(23, 43, 77, 0.85);
+      }
+    }
+  }
+
+  .indexItem {
+    box-sizing: border-box;
+    padding: 0.28rem 0;
+    margin-right: 0.38rem;
+    border-bottom: 1px solid #ebecf0;
+    font-size: 0.28rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #172b4d;
+  }
+  .cityItem {
+    box-sizing: border-box;
+    padding: 0.28rem 0;
+    margin-right: 0.38rem;
+    border-bottom: 1px solid #ebecf0;
+    font-size: 0.28rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(23, 43, 77, 0.85);
+  }
+
+  @media all and (min-height:300px) and (max-height:680px) {
+    .rightCon {
+      top: 1.5rem!important;
+    }
+  }
+
+  .rightCon {
+    position: fixed;
+    right: 0;
+    top: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > img {
+      width: 0.32rem;
+      height: 0.32rem;
+      margin-bottom: 0.2rem;
+    }
+    .rightItem {
+      padding: 0 0.2rem;
+      margin-bottom: 0.14rem;
+      font-size: 0.24rem;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(23, 43, 77, 0.85);
+    }
+  }
+}
+
+.modalWrap{
+  position: fixed;
+  left: 0;
+  top: 1.2rem;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  .modalCon{
+    background-color: white;
+    box-sizing: border-box;
+    .searchItem {
+      box-sizing: border-box;
+      padding: 0.28rem 0;
+      margin-right: 0.38rem;
+      margin-left: 0.38rem;
+      border-bottom: 1px solid #ebecf0;
+      font-size: 0.28rem;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(23, 43, 77, 0.85);
+    }
+  }
+
+ 
+}

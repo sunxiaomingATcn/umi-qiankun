@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon-收起-蓝圆</title>
+    <desc>Created with Sketch.</desc>
+    <g id="阿保2.2+齐欣API前端对接" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="投保信息填写1" transform="translate(-665.000000, -405.000000)">
+            <g id="编组-2" transform="translate(0.000000, 349.000000)">
+                <g id="icon-收起-蓝圆" transform="translate(665.000000, 56.000000)">
+                    <g>
+                        <g>
+                            <circle id="椭圆形" fill="#76B8FB" opacity="0.197846912" cx="22.5" cy="22.5" r="22.5"></circle>
+                            <polyline id="路径-2" stroke="#3A8FFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(23.000000, 21.500000) scale(1, -1) translate(-23.000000, -21.500000) " points="16 18 23 25 30 18"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

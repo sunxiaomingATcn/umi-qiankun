@@ -1,0 +1,128 @@
+.modal_container {
+    background-color: rgba(33, 33, 33, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    z-index: 9999;
+    .modal_body {
+        background-color: #fff;
+        border-radius: 0.05rem;
+        padding-top: 0.4rem ;
+        width: 6.2rem;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate3d(-50%, -50%, 0);
+        z-index: 1000;
+        .modal_title {
+            text-align: center;
+            font-size: 0.36rem;
+            font-weight: bold;
+        }
+        .modal_content {
+            min-height: 1rem;
+            padding: 0.4rem;
+            text-align: center;
+            font-size: 0.3rem;
+            font-family: PingFangSC-Regular;
+            line-height: 0.48rem;
+            font-weight:400;
+            color:rgba(25,28,32,1);
+        }
+        .modal_footer {
+            text-align: center;
+            display: flex;
+            border-top: 1px solid #D6D6D6;
+            button {
+                flex: 1;
+                line-height: 0.48rem;
+                height: 1rem;
+                color: #595c65;
+                outline: none;
+                font-size: 0.32rem;
+                font-family: PingFangSC-Regular;
+            }
+            button:nth-child(2) {
+                color: #3a8fff;
+                border-left: 1px  solid  #D6D6D6;
+            }
+        }
+    }
+    .modal_popup_body {
+        height: 75%;
+        width: 100%;
+        border-radius: 0.4rem 0.4rem 0rem 0rem;
+        background: #ffffff;
+        z-index: 1000;
+        position: absolute;
+        bottom: 0;
+        .modal_popup_title {
+            font-size: 0.34rem;
+            font-family: PingFangSC-Medium;
+            font-weight: bold;
+            color: #172B4D;
+            line-height: .5rem;
+            text-align: center;
+            // border-bottom: 1px solid #efefef;
+            padding: 0.3rem .8rem;
+            position: relative;
+            span {
+                width: 0.25rem;
+                height: 0.25rem;
+                background: url('~@/assets/closePopup.png') no-repeat;
+                background-size: contain;
+                cursor: pointer;
+                position: absolute;
+                right: 0.3rem;
+                top: 50%;
+                transform: translate3d(-50%, -50%, 0);
+            }
+        }
+        .modal_content {
+            padding: .2rem .6rem;
+            height: calc(100% - 1.5rem);
+            overflow-y: auto;
+            overflow-x: hidden;
+            color: #5E6C84;
+            &.padding_none{
+                padding: 0;
+                background: #EFEFEF;
+            }
+        }
+    }
+}
+
+.modalPopup{
+    border-radius: 0.4rem 0.4rem 0rem 0rem;
+    overflow: hidden;
+    :global{
+        .am-modal-header{
+            padding: .4rem .7rem .28rem;
+            font-size: 0.32rem;
+            font-weight: 500;
+            color: #172B4D;
+            // border-bottom: 1px solid #efefef;
+        }
+        .am-modal-close{
+            top: .4rem;
+        }
+        .am-modal-body{
+            font-size: 0.28rem;
+            font-weight: 400;
+            color: #5E6C84;
+            line-height: 0.44rem;
+        }
+        .am-modal-close-x{
+            width: 0.24rem;
+            height: 0.24rem;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAAXNSR0IArs4c6QAAACdQTFRFAAAAi5Ojh5OiiJKjipSliZOkiJOkipOkipSkiZOliJOkiZOkiZOkQZyOWAAAAAx0Uk5TAEBCenp7h4fk5ff3i4cKFQAAAI5JREFUGNNj0FjCAAVejQxzzhRA2OxnTjDsOXMcwqk5c4oh5gxEiv3MmcMg4jhEAiQIIaFiQOoYTAhMJ7BBFYOlcs7AbABKwSQYGNhAnASYQ3LAZmDhoCjLAXGOwSVARifAJECWHoNJQEQYYBREiB2qAOwgG6hWoNRRhjUwQ3POnGboQQTISQaJxfCgagIA+mxh8mWnahQAAAAASUVORK5CYII=) no-repeat;
+            background-size: 100%;
+        }
+
+    }
+
+
+}

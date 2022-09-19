@@ -1,0 +1,35 @@
+.wx_share_container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100000;
+  .mask{
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+  }
+  .guide_arrow{
+    width: 2.42rem;
+    position: absolute;
+    right: .42rem;
+    top: .16rem;
+  }
+  .guideContent{
+    position: absolute;
+    top: 1.76rem;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    p:first-child{
+      font-size: 0.4rem;
+      font-weight: 600;
+    }
+    p:last-child{
+      font-size: 0.28rem;
+      font-weight: 600;
+      margin-top: .16rem;
+    }
+  }
+}

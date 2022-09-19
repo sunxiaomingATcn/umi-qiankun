@@ -1,0 +1,237 @@
+.insuranceEncyclopedia,.insuranceEncyclopedialist {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow-y: scroll;
+    .empty {
+        margin-top: 1.6rem;
+        margin-left: 2.02rem;
+        width: 2.8rem;
+        height: 2.5rem;
+    }
+    .emptyValue {
+        font-size: 0.3rem;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(23, 43, 77, 0.85);
+        text-align: center;
+        margin-top: 0.4rem;
+    }
+    .detail {
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+        background: #ffffff;
+        padding: 0 0.3rem;
+        .title {
+            padding-top: 0.2rem;
+            font-size: 0.44rem;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #172b4d;
+            line-height: 0.6rem;
+            -webkit-background-clip: text;
+        }
+        .info {
+            display: flex;
+            margin-top: 0.2rem;
+            .author {
+                font-size: 0.24rem;
+                font-family: PingFangSC-Medium, PingFang SC;
+                font-weight: 500;
+                color: rgba(23, 43, 77, 0.8);
+            }
+            .time {
+                margin-left: 0.4rem;
+                font-size: 0.24rem;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #b3bac5;
+            }
+        }
+        .content {
+            margin-top: 0.4rem;
+        }
+        .more {
+            width: 3rem;
+            height: 0.66rem;
+            background: #f4f5f7;
+            border-radius: 0.33rem;
+            font-size: 0.26rem;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #0065ff;
+            text-align: center;
+            line-height: 0.66rem;
+            margin-left: 1.96rem;
+            margin-top: 0.82rem;
+            margin-bottom: 0.62rem;
+        }
+    }
+    .tab {
+        width: 100%;
+        height: 1.06rem;
+        background: #fff;
+        border-radius: 0rem 0rem 0.4rem 0.4rem;
+        .selected {
+            font-size: 0.32rem;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #0065ff;
+            line-height: 0.44rem;
+            -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            position: relative;
+            &::before {
+                display: block;
+                content: '';
+                width: 0.3rem;
+                height: 0.06rem;
+                background: #0065ff;
+                border-radius: 0.03rem;
+                position: absolute;
+                bottom: -0.15rem;
+                left: 50%;
+                margin-left: -0.24rem;
+            }
+        }
+        .normal {
+            font-size: 0.28rem;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #172b4d;
+            line-height: 0.4rem;
+            -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
+        }
+        .currentStyle {
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    :global {
+        .am-tabs-default-bar-top .am-tabs-default-bar-tab {
+            border: none;
+        }
+        .am-tabs-default-bar-top .am-tabs-default-bar-tab {
+            border-bottom: 0;
+        }
+        .am-tabs-default-bar-tab::after {
+            height: 0 !important;
+        }
+        .am-tabs-default-bar-underline {
+            display: none;
+        }
+        .am-activity-indicator.am-activity-indicator-sm {
+            // height: 100%;
+            // width: 100%;
+            // position: fixed;
+            // bottom: 0;
+            // left: 0;
+            // z-index: 100000;
+            // text-align: center;
+            // // background: #F8F8F8;
+            // justify-content: center;
+            // &::before{
+            //     display: block;
+            //     content:' ';
+            //     position: absolute;
+            //     bottom: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: calc(100% - 1rem);
+            //     background-color: #fff;
+            // }
+        }
+        .am-pull-to-refresh-indicator {
+            // height: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .finish {
+        height: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: grey;
+    }
+    .hidden {
+        :global {
+            .am-pull-to-refresh-indicator {
+                display: none;
+            }
+        }
+    }
+    .list {
+        padding: 0 0.3rem;
+        .articleItem {
+            width: 100%;
+            height: 2rem;
+            background: #fff;
+            border-radius: 0.2rem;
+            margin-top: 0.2rem;
+            flex-shrink: 0;
+            flex-direction: row-reverse;
+            .img {
+                width: 1.6rem;
+                height: 1.6rem;
+                // background: skyblue;
+                border-radius: 0.2rem;
+            }
+            .title {
+                width: 4.6rem;
+                height: 0.88rem;
+                font-size: 0.32rem;
+                font-family: PingFangSC-Medium, PingFang SC;
+                font-weight: 500;
+                color: #172b4d;
+                line-height: 0.44rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                /* autoprefixer: ignore next */ 
+                -webkit-box-orient: vertical; 
+                -webkit-line-clamp: 2;
+            }
+            .recommend {
+                width: 1.2rem;
+                height: 0.46rem;
+                background: rgba(255, 89, 53, 0.1);
+                border-radius: 0.1rem;
+                font-size: 0.24rem;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #ff5935;
+                line-height: 0.46rem;
+                text-align: center;
+                margin-top: 0.18rem;
+            }
+            .time {
+                font-size: 0.24rem;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #b3bac5;
+                line-height: 0.34rem;
+                -webkit-background-clip: text;
+                margin-top: 0.24rem;
+                // -webkit-text-fill-color: transparent;
+            }
+        }
+        .imgleftpadding {
+            padding: 0.2rem 0.3rem;
+            padding-left: 0.2rem;
+        }
+        .textpadding {
+            padding: 0.24rem 0.3rem;
+        }
+        .imgrightpadding {
+            padding: 0.2rem 0.3rem;
+            padding-right: 0.2rem;
+        }
+    }
+}
+.insuranceEncyclopedialist{
+    background: #f4f5f7;
+}

@@ -1,0 +1,165 @@
+.my {
+    width: 100%;
+    height: 100%;
+    background: #f4f5f7;
+    overflow-y: auto;
+    .myHeader {
+        width: 100%;
+        height: 1.9rem;
+        background: #ffffff;
+        border-radius: 0 0 0.4rem 0.4rem;
+        display: flex;
+        .img {
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 0.6rem;
+            margin-top: 0.2rem;
+            margin-left: 0.4rem;
+            margin-right: 0.3rem;
+        }
+        .info {
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            .name {
+                margin-top: 0.36rem;
+                font-size: 0.4rem;
+                color: #172b4d;
+            }
+            .phone {
+                font-size: 0.28rem;
+                color: #8993a4;
+            }
+        }
+        .authentication {
+            width: 1.2rem;
+            height: 0.46rem;
+            margin-top: 0.4rem;
+            margin-left: 0.24rem;
+        }
+    }
+    .data {
+        width: 6.9rem;
+        background: #ffffff;
+        border-radius: 0.2rem;
+        margin-left: 0.3rem;
+        margin-top: 0.3rem;
+        padding: 0.3rem 0;
+        position: relative;
+        .premiumTitle {
+            font-weight: 400;
+            font-size: .28rem;
+            font-weight: 600;
+            color: #5E6C84;
+            line-height: .4rem;
+            margin-bottom: .2rem;
+            text-align: center;
+        }
+        .premium {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .premiumNumber {
+                font-size: 0.36rem;
+                font-weight: 600;
+                color: #ff5935;
+                flex: 1;
+                text-align: center;
+                line-height: .5rem;
+                padding-top: .01rem;
+                &:not(:last-child){
+                    border-right: 1px solid #EBEEF0;
+                }
+                p:first-child{
+                    font-size: .24rem;
+                    font-weight: 400;
+                    color: #5E6C84;
+                    line-height: .3rem;
+                    margin-bottom: .04rem;
+                }
+            }
+        }
+        .issue {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .issueTitle {
+                font-size: 0.24rem;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: rgba(23, 43, 77, 0.75);
+            }
+            .issueNumber {
+                margin-top: 0.16rem;
+                font-size: 0.4rem;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 800;
+                color: #ff5935;
+            }
+        }
+        .more {
+            width: 1rem;
+            height: 1rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    .container {
+        width: 6.9rem;
+        background: #ffffff;
+        border-radius: 0.2rem;
+        margin-top: 0.3rem;
+        margin-left: 0.3rem;
+        margin-bottom: .3rem;
+        padding: 0 0.4rem;
+        .item {
+            width: 100%;
+            height: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .right {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 0.12rem;
+                    // height: 0.16rem;
+                    height: auto;
+                }
+            }
+            .left {
+                display: flex;
+                align-items: center;
+                font-size: 0.28rem;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #5e6c84;
+                img {
+                    width: 0.4rem;
+                    height: 0.4rem;
+                    margin-right: 0.18rem;
+                }
+            }
+        }
+    }
+    .line {
+        width: 6.1rem;
+        // height: 0.02rem;
+        height: 0;
+        border-bottom: 0.02rem solid #ebecf0;
+    }
+}
+.logout{
+    height: .9rem;
+    line-height: .9rem;
+    font-size: .28rem;
+    text-align: center;
+    background: #E4F0FF;
+    border-radius: .1rem;
+    color: #437DFF;
+    font-weight: 500;
+    margin: .3rem;
+}

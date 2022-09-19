@@ -1,0 +1,277 @@
+.teamManagement {
+    width: 100%;
+    height: 100%;
+    background: #f4f5f7;
+    display: flex;
+    flex-direction: column;
+    .teamContent{
+        flex: 1;
+        overflow-y: auto;
+    }
+    .tab {
+        width: 100%;
+        height: 1.16rem;
+        display: flex;
+        font-size: 0.36rem;
+        background-color: #fff;
+        z-index: 1000;
+        .tabcenter {
+            flex: 1;
+            align-items: center;
+            text-align: center;
+            font-size: .28rem;
+            color: #172B4D;
+            font-weight: 400;
+            div{
+                height: 100%;
+                padding-top: .3rem;
+                line-height: .4rem;
+            }
+        }
+        .active{
+            color: #437DFF;
+            position: relative;
+            font-size: .32rem;
+            font-weight: 500;
+            &:after{
+                display: block;
+                content: '';
+                position: absolute;
+                bottom: .3rem;
+                left: 50%;
+                width: .3rem;
+                height: .06rem;
+                margin-left: -.15rem;
+                background-color: #5B8EFF;
+                border-radius: .03rem;
+            }
+        }
+    }
+    .teamHeader {
+        width: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        .data {
+            width: 6.9rem;
+            height: 1.7rem;
+            background: #ffffff;
+            border-radius: 0.2rem;
+            margin-top: 0.38rem;
+            margin-left: 0.3rem;
+            padding: 0.4rem 0;
+            display: flex;
+            position: relative;
+            .premium {
+                border-right: 0.02rem solid #ebecf0;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .premiumTitle {
+                    font-size: 0.24rem;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: rgba(23, 43, 77, 0.75);
+                }
+                .premiumNumber {
+                    margin-top: 0.16rem;
+                    font-size: 0.4rem;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 800;
+                    color: #ff5935;
+                }
+            }
+            .issue {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .issueTitle {
+                    font-size: 0.24rem;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: rgba(23, 43, 77, 0.75);
+                }
+                .issueNumber {
+                    margin-top: 0.16rem;
+                    font-size: 0.4rem;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 800;
+                    color: #ff5935;
+                }
+            }
+            .more {
+                width: 1rem;
+                height: 1rem;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+    .rank {
+        width: 6.9rem;
+        background: #ffffff;
+        border-radius: 0.2rem;
+        padding: 0.4rem;
+        padding-top: 0.3rem;
+        margin-top: 0.3rem;
+        margin-left: 0.3rem;
+        .title {
+            font-size: 0.36rem;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #172b4d;
+            width: 100%;
+            text-align: center;
+        }
+        .rankTabs {
+            width: 4.08rem;
+            height: 0.66rem;
+            background: #f8fcff;
+            border-radius: 0.36rem;
+            border: 0.01rem solid #ebecf0;
+            display: flex;
+            align-items: center;
+            margin-left: 1.04rem;
+            margin-top: 0.32rem;
+            font-size: 0.28rem;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #172b4d;
+        }
+        .rankCurrent {
+            width: 2rem;
+            height: 0.62rem;
+            background: #0065ff;
+            border-radius: 0.31rem;
+            border: 0.01rem solid #ebecf0;
+            font-size: 0.28rem;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .rankNormal {
+            font-size: 0.28rem;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #172b4d;
+            width: 2rem;
+            height: 0.62rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .teamRank {
+        width: 6.9rem;
+        background: #ffffff;
+        border-radius: 0.2rem;
+        margin: 0.3rem;
+        padding: 0.14rem 0.4rem 0.24rem 0.4rem;
+        .theader {
+            width: 100%;
+            height: 0.7rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.26rem;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #172b4d;
+            li {
+                flex: 1;
+                width: 50%;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .item {
+            width: 100%;
+            border-radius: 0.1rem;
+            ul {
+                width: 100%;
+                height: 0.7rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.26rem;
+                font-family: PingFangSC-Semibold, PingFang SC;
+                font-weight: 600;
+                color: #172b4d;
+                li {
+                    flex: 1;
+                    width: 50%;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .theader{
+                font-weight: 400;
+            }
+        }
+    }
+    .teamRelation {
+        width: 6.9rem;
+        background: #ffffff;
+        border-radius: 0.2rem;
+        padding: 0.3rem 0.4rem 0.4rem 0.4rem;
+        margin: 0.3rem;
+        .title {
+            width: 100%;
+            text-align: center;
+            font-size: 0.36rem;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #172b4d;
+            margin-bottom: 0.2rem;
+        }
+        .item {
+            width: 100%;
+            height: 0.8rem;
+            border-radius: 0.1rem;
+            background: #f4f5f7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left {
+                font-size: 0.26rem;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #172b4d;
+                margin-left: 0.4rem;
+            }
+            .right {
+                width: 0.12rem;
+                height: 0.16rem;
+                margin-right: 0.38rem;
+            }
+        }
+    }
+    .lookMore {
+        width: 100%;
+        height: 0.8rem;
+        background: #f4f5f7;
+        border-radius: 0.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.24rem;
+        font-family: SourceHanSansSC-Normal, SourceHanSansSC;
+        font-weight: 400;
+        color: #172b4d;
+        img {
+            width: 0.1rem;
+            height: auto;
+            margin-left: 0.18rem;
+        }
+    }
+}

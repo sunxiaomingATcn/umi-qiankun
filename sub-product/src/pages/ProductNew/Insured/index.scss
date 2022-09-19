@@ -1,0 +1,531 @@
+.canvas{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    canvas{
+        width: 100%!important;
+        height: 90%!important;
+    }
+    .btn{
+        width: 100%;
+       }
+}
+.canvas1{
+    width: 0!important;
+    height: 0!important;
+    canvas{
+        width: 0!important;
+        height: 0!important;
+    }
+}
+.pdf-canvas canvas{
+    width: 100%;
+    height: auto;
+}
+#docx .document-container{
+  width: auto!important;
+}
+.container{
+    background-color: rgba(33, 33, 33, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    z-index: 9999;
+    .mask{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 98;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .contentpdf{
+        height: 80%;
+        width: 100%;
+        border-radius: 0.1rem 0.1rem 0rem 0rem;
+        background: #ffffff;
+        z-index: 1000;
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+        canvas{
+            width: 100%!important;
+            height: 90%!important;
+        }
+        .span {
+            width: 0.25rem;
+            height: 0.25rem;
+            background: url('~@/assets/closePopup.svg') no-repeat;
+            background-size: contain;
+            cursor: pointer;
+            position: absolute;
+            right: 0.3rem;
+            top: .5rem;
+            transform: translate3d(-50%, -50%, 0);
+        }
+    }
+}
+.container_wrapper {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    input::-webkit-input-placeholder{
+        font-size: .28rem;
+        color: #C1C6CE;
+    }
+
+    .recovery{
+        width: 100%;
+        height: 1rem;
+        background:rgba(255,246,232,1);
+        display: flex;
+        p{
+            width:3.08rem;
+            height:0.42rem;
+            font-size:0.28rem;
+            font-family:PingFangSC-Regular,PingFang SC;
+            font-weight:400;
+            color:rgba(89,92,101,1);
+            line-height:0.42rem;
+            margin-top: 0.28rem;
+            margin-left: 0.4rem;
+        }
+        .noneed{
+            width:1.3rem;
+            height:0.56rem;
+            border-radius:0.04rem;
+            border:0.01rem solid rgba(255,150,0,1);
+            line-height:0.56rem ;
+            text-align: center;
+            color: #FF9600;
+            margin-top: 0.22rem;
+            margin-left: 0.82rem;
+        }
+        .need{
+            width:1.3rem;
+            height:0.56rem;
+            background:rgba(255,150,0,1);
+            border-radius:0.04rem;
+            line-height:0.56rem ;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 0.22rem;
+            margin-left: 0.2rem;
+        }
+    }
+
+    .insured_title {
+        font-size: 0.32rem;
+        font-family: PingFangSC-Semibold;
+        font-weight: 600;
+        color: #172B4D;
+        line-height: 0.54rem;
+        padding: 0.3rem 0.4rem;
+        .beneficiary_des {
+            font-size: 0.28rem;
+            font-family: PingFangSC;
+            font-weight: 400;
+            color: #172B4D;
+        }
+
+        img {
+            width: 0.42rem;
+            transition: all 0.2s;
+            transform: rotate(0deg);
+
+            &.show {
+                transition: all 0.2s;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+
+    .insured_item_wrapper {
+        background: #ffffff;
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+        border-top: 1px solid #EBECF0;
+        padding: 0 .4rem;
+        img {
+            width: 0.45rem;
+        }
+
+        &.hide {
+            height: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.2s ease-out;
+            overflow: hidden;
+        }
+
+        .beneficiary_Item_title {
+            padding: 0.24rem 0;
+            font-family: PingFangSC;
+            font-weight: bold;
+            color: #191C20;
+            border-bottom: 1px solid #EFEFEF;
+            font-size: 0.3rem;
+            height: 1.1rem;
+            .del {
+                color: #0065ff;
+            }
+        }
+    }
+
+    .content {
+        height: calc(100% - 1.3rem);
+        padding-top: .16rem;
+        overflow-y: auto;
+        background: #F4F5F6;
+
+        .insured_input_wrapper {
+            margin-top: 0.16rem;
+            // padding: 0 0.4rem;
+            background: #ffffff;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            .beneficiary_container {
+                border-bottom: 1px solid #EFEFEF;
+            }
+
+            .title {
+                height: 1.36rem;
+                display: flex;
+                padding: 0.3rem 0.4rem 0.2rem 0.3rem;
+                background: #f4f5f6;
+
+                .tip {
+                    width: 0.8rem;
+                    height: 0.8rem;
+                    background: #ff9600;
+                    position: relative;
+                    text-align: center;
+                    color: #ffffff;
+                    font-weight: bold;
+                    line-height: 0.8rem;
+                    margin-right: 0.4rem;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 0;
+                        width: 0;
+                        border-top: 0.4rem solid transparent;
+                        border-bottom: 0.4rem solid transparent;
+                        border-left: 0.2rem solid #ff9600;
+                        right: -0.2rem;
+                    }
+                }
+
+                h3 {
+                    flex: 1;
+                    font-size: 0.3rem;
+                    font-family: PingFangSC-Semibold;
+                    font-weight: bold;
+                    color: rgba(25, 28, 32, 1);
+                    line-height: 0.46rem;
+                }
+            }
+
+            .content_questions {
+                padding: 0 0.4rem;
+                background: #ffffff;
+
+                .questions_item {
+                    padding: 0.2rem 0;
+                    font-size: 0.26rem;
+                    font-family: PingFangSC-Regular;
+                    line-height: 0.4rem;
+                    color: #595c65;
+                    display: flex;
+                }
+            }
+
+            .addBeneficiary {
+                height: 1rem;
+                line-height: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .addBeneficiaryBac {
+                    background: url('../../../assets/icon/add.svg') no-repeat;
+                    background-size: contain;
+                    width: 0.4rem;
+                    height: 0.4rem;
+                }
+
+                .beneficiaryContent {
+                    margin-left: 0.2rem;
+                    font-size: 0.3rem;
+                    font-family: PingFangSC-Medium;
+                    font-weight: bold;
+                    color: #0065ff;
+                }
+            }
+        }
+
+
+        .statement {
+            display: flex;
+            padding: 0.3rem 0.4rem;
+            .check_btn {
+                margin-right: 0.12rem;
+                margin-top: 0.07rem;
+            }
+            .declarationWrapper{
+                flex: 1;
+                color: rgba(94, 108, 132, 1);
+                line-height: 0.45rem;
+                font-size: 0.24rem;
+                a, span {
+                    color: rgba(0, 101, 255, 1);
+
+                    font-family: PingFangSC-Regular;
+                    font-weight: 400;
+                    word-break: break-all;
+                }
+            }
+
+        }
+    }
+
+    .footer {
+        height: 1.8rem;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0rem 0rem 0.08rem 0rem rgba(0, 0, 0, 0.08);
+        z-index: 99;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        .footerContent{
+            display: flex;
+            align-items: center;
+            z-index: 1;
+            height: 1.2rem;
+            .btn_flex{
+               button{
+                float: right;
+                margin-right: .3rem;
+               }
+               button:disabled{
+                background: #C1C6CE;
+                color: #fff;
+               }
+            }
+        }
+        :global{
+            .product_insured_amount{
+                flex: 1;
+                text-align: left;
+                padding-left: .4rem;
+            }
+        }
+        .btn_flex {
+            flex: 1;
+            font-size: 0.3rem;
+            text-align: center;
+            button{
+                width: 2.2rem;
+                height: 0.8rem;
+                background: #0065FF;
+                border-radius: 0.1rem;
+                line-height: .8rem;
+                text-align: center;
+                font-weight: 500;
+                color: #FFFFFF;
+            }
+        }
+
+        .insured_amount {
+            font-size: 0.46rem;
+            font-weight: bold;
+            color: #ff9600;
+            text-align: center;
+            line-height: 1.3rem;
+            border-left: 0.01rem solid #efefef;
+            border-right: 0.01rem solid #efefef;
+            span {
+                font-size: 0.26rem;
+            }
+            .fixPrice{
+                line-height: .3rem;
+                p{
+                    margin-top: .3rem;
+                }
+                div{
+                    font-size: .22rem;
+                    color: #aaa;
+                    margin-top: .15rem;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+}
+
+.authority {
+    padding: 0.3rem 0;
+    display: flex;
+    //justify-content: space-between;
+    align-items: center;
+    .check_btn {
+        width: 0.28rem;
+        height: 0.28rem;
+        border-radius: 50%;
+        position: relative;
+        border: 1px solid #B0B3B4;
+        margin-right: 0.12rem;
+
+        &.checked {
+            border: 1px solid #3A8FFF;
+            background: transparent;
+
+            &::before {
+                position: absolute;
+                content: '';
+                display: block;
+                width: 0.14rem;
+                height: 0.08rem;
+                border-left: 1px solid #3A8FFF;
+                border-bottom: 1px solid #3A8FFF;
+                top: calc(50% - 0.07rem);
+                left: calc(50% - 0.07rem);
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+
+    .showDeclaration {
+        color: #3A8FFF;
+
+        img {
+            width: 0.3rem;
+        }
+    }
+
+}
+
+.item_wrapper {
+    background-color: #ffffff;
+    border-bottom: 1px solid #efefef;
+
+    &:last-child {
+        border-bottom: 0;
+
+    }
+
+    .item {
+        display: flex;
+        padding: 0.3rem .4rem;
+        font-family: PingFangSC-Regular;
+        .item_children {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 0.32rem;
+            font-family: PingFangSC-Semibold;
+            font-weight: 600;
+            color: #172B4D;
+            line-height: 0.54rem;
+        }
+
+        .item_extra {
+            text-align: right;
+            margin-right: 0.4rem;
+            max-width: 4.9rem;
+            line-height: 0.5rem;
+            color: #172B4D;
+            font-size: 0.28rem;
+            position: relative;
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 0.1rem;
+                height: 0.2rem;
+                right: -0.4rem;
+                top: calc(50% - 0.1rem);
+                background: url('~@/assets/arrow.svg') no-repeat;
+                background-size: 100%;
+            }
+        }
+    }
+}
+
+.check_btn {
+    width: 0.28rem;
+    height: 0.28rem;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid #B0B3B4;
+    display: inline-block;
+}
+
+.checked {
+    background: #0065FF;
+    border: 0;
+
+    &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 0.14rem;
+        height: 0.08rem;
+        border-left: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        top: calc(50% - 0.07rem);
+        left: calc(50% - 0.08rem);
+        transform: rotate(-45deg);
+    }
+}
+
+.declaration {
+    font-size: 0.26rem;
+    line-height: 0.34rem;
+
+    p {
+        margin-top: 0.2rem;
+    }
+}
+
+.modalFileContainer{
+    padding-bottom: 1.8rem;
+    // height: 6rem;
+    overflow: auto;
+    .modalFileReadedBtn{
+        position: absolute !important;
+        bottom: 0.6rem;
+        left: .4rem;
+        width: 6.7rem;
+        font-size: .28rem;
+        background: rgba(0, 101, 255, 1);
+        z-index: 10000;
+        border-radius: 0.1rem;
+        color:#fff;
+    }
+    :global{
+        .am-button-primary::before{
+            display: none;
+        }
+        .am-button-disabled{
+            background: #C1C6CE;
+            opacity: 1;
+        }
+    }
+}

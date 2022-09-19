@@ -1,0 +1,148 @@
+@charset "UTF-8";
+$rem-base: 40;
+
+//
+// colors
+//
+// 主题色
+$themeColor: #3A8FFF !default;
+// 背景
+$bg1: #F4F5F6;
+$bg2: #fff;
+$bg3: #eeeeee;
+
+// 橙色
+$orange: #fa9128 !default;
+
+// 金色
+$gold: #d8b267 !default;
+
+// red
+$red0: #e63617 !default; // 警示红 错误提示、错误相关文字、强烈警示图形
+$red1: #fa6855 !default; // 背景红 大面积红色色块、例如详情页顶部、button、图表、icon等内容
+
+$red2: #fa6450 !default; // 标题红 小面积红色提醒使用，品牌相关内容、提醒性文字
+$red3: #ff8373 !default; // 备用
+$red4: #98a0b3 !default; // 备用
+$red5: #ffe9e6 !default; // 通知红 通知条背景色使用
+$red6: #fff6f5 !default; // 背景红 红色背景使用，用于突出内容，形成一定区域
+
+// black
+$black0: #121c32 !default; // 标题黑 最深色，使用于大标题文字、着重显示的文字或图形
+$black1: #323a4d !default; // 金融黑 用于标题、主要内容等文字或图形
+$black2: #394259 !default; // 内容黑 用于小标题、正文文字等
+$black3: #5d667a !default; // 内容黑 用于正文文字等
+$black4: #868e9e !default; // 辅助黑 用于不显著的辅助性文字
+$black5: #98a0b3 !default; // 辅助黑 用于不显著的辅助行文字
+$black6: #bec2cc !default; // 默认文案 用于输入框默认文案等非常不显著的文字
+
+// gray
+$gray0: #dcdfe6 !default; // 重线灰 用于间隔线、模块的独立间隔边线、如title bar、tab等描边线
+$gray1: #e1e4eb !default; // 浅线灰 用于大部分页面的内容间隔
+$gray2: #f7f8fa !default; // 容器灰 用于整体应用的背景色
+
+// yellow
+$yellow0: #ffa640 !default; // 警示黄 用于警示、风险体会相关文字和图形
+$yellow1: #fec15f !default; // 标准黄 用于警示、风险提示相关文字和图形
+$yellow2: #fff5e6 !default; // 提示黄 用于提示、背景等文字
+
+// blue
+$blue0: #3A8FFF !default; // 科技蓝 用于文字链接、可点击icon等文字和图形
+$blue1: #8EC3F9 !default; // 图形蓝 用于文字、小面积图形等
+$blue2: #a6ceff !default; // 背景蓝 用于辅助文案、图形的背景等
+
+// green
+$green0: #47b374 !default; // 损益绿 用于资产损失、收益损失等负值情况
+
+// white
+$white0: #fff !default;
+
+//
+// theme-color
+//
+$theme-colors: () !default;
+$theme-colors: map-merge(
+    (
+        primary: $orange,
+        // 主色调，头部背景，按钮颜色等地方使用
+            warning: $yellow0,
+        // 警告色
+            danger: $red0,
+        // 报错色
+            disabled: $black6,
+        // 禁止状态的颜色
+            bg-notice: $red5,
+        // 通知背景色
+            bg-container: white,
+        // 整体背景色
+            bg-area: $red6,
+        // 图表的阴影区域颜色
+            border-block: $gray0,
+        // 块之间的间隔线
+            border-normal: $gray1,
+        // 普通间隔线
+            text-dark: $black0,
+        // 最深的文字颜色，用于大标题
+            text-dark-light: $black1,
+        // 用于标题，或者很重要的文字
+            text-normal: $black2,
+        // 正文文字，小标题
+            text-normal-light: $black3,
+        // 用于重要度稍低的正文文字
+            text-secondary: $black4,
+        // 辅助文案颜色
+            text-secondary-light: $black5,
+        // 重要度更低的辅助文案颜色
+            text-placeholder: $black6,
+        // placeholder颜色
+    ),
+    $theme-colors
+);
+
+//
+// Body
+//
+$body-bg: theme-color('bg-container') !default;
+$body-color: theme-color('text-dark-light') !default;
+
+//
+// border line-height
+//
+$border-radius: 0.1rem !default;
+$border-width: 0.01rem !default;
+
+$line-height: 1.5 !default;
+
+//
+// Fonts
+//
+$font-family-base: PingFangSC-Regular, 'Microsoft YaHei', Arial, sans-serif !default;
+
+$font-size-base: 0.7rem !default;
+
+$line-height-base: $line-height !default;
+
+//
+// btn
+//
+$btn-border-radius: $border-radius !default;
+$btn-border-width: $border-width !default;
+$btn-color-primary: theme-color('primary') !default;
+$btn-color-disabled: theme-color('disabled') !default;
+$btn-font-size-base: $font-size-base !default;
+$btn-line-height: $line-height !default;
+$btn-padding: 0 0.35rem;
+
+@mixin singleLineEllipsis() {
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin LinesEllipsis() {
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

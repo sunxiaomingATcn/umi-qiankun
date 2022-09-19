@@ -1,0 +1,277 @@
+.userOrderContainer{
+  height: 100%;
+  overflow-y: auto;
+  background: #F4F5F7;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  width: 100%;
+  user-select:none;
+}
+.orderType{
+  z-index: 101;
+  position: fixed;
+  height: 1.12rem;
+  display: flex;
+  align-items: center;
+  padding-left: .3rem;
+  font-size: .32rem;
+  font-weight: 500;
+  color: #172B4D;
+  &:after {
+    display: block;
+    content:'';
+    width: .18rem;
+    height: .18rem;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAKCAYAAAC5Sw6hAAAAAXNSR0IArs4c6QAAARBJREFUKFNjZGBgYBDX8Wtj+Pe/nIGRgQnEJwH8Y2Bk7Hx5ZVMVI9ggbd8+BgaGQhIMgCtlZGDse3F1UzHYIAZjY1bxH1JbGBgY3Eg0bNdLjmc+DGfP/oYYxMDAIKodysPE8PMAA8N/Y+IMYzz7j4Hd4fXV1V9A6uEGgb2oFyjG8PfPUQYGBhUCht1hYGaxfnlp/SuYOhSDQIJiOgHKjP//ggwTx2HYy/+MzNavrmy4iyyPYRBIUkrP1+jvX4YDDAwMvGiGfWZmZnB4dmnzOXRLsBoEcZmfK+P//6AIYINq+vWfkdHn1ZVNu7G5FKdB0GQRxcDAsBiqMfbl1c3LcIUdXoMghvn4guiXV7dsxhcBANXXSQs4hEPUAAAAAElFTkSuQmCC');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: .1rem;
+    margin-left: .1rem;
+}
+}
+.fixedHeader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.navbar {
+  display: flex;
+  padding:.3rem;
+  background: #fff;
+  position: relative;
+  justify-content: flex-end;
+  // border-radius: 0rem 0rem 0.4rem 0.4rem;
+  .slide {
+    font-size: 0.28rem;
+    color: #172B4D;
+    padding: 0 .15rem;
+    padding-bottom: .1rem;
+    text-align: center;
+    line-height: .4rem;
+    &.active {
+      position: relative;
+      font-weight: 500;
+      color: #437DFF;
+      &:after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0.3rem;
+        margin-left: -.15rem;
+        height: .06rem;
+        content: ' ';
+        height: .06rem;
+        background:#437DFF;
+        border-radius: .03rem;
+      }
+    }
+    &:last-child{
+      padding-right: 0;
+    }
+  }
+}
+
+.summary{
+  background: #F4F5F7;
+  padding: .3rem;
+  // padding-top: 1.36rem;
+  // margin-top: -1rem;
+  border-radius: 0rem 0rem 0.4rem 0.4rem;
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #172B4D;
+  position: relative;
+  span{
+    color: #FF5935;
+  }
+  .search{
+    position: absolute;
+    bottom: .2rem;
+    right: .3rem;
+    font-size: 0.28rem;
+    font-weight: 500;
+    color: #172B4D;
+    vertical-align: middle;
+    border-radius: 0.3rem;
+    border: 1px solid #C1C6CE;
+    padding: .12rem .3rem;
+    display: flex;
+    align-items: center;
+    .screenIcon{
+      width: .2rem;
+      height: .2rem;
+      margin-left: .14rem;
+    }
+  }
+}
+
+.listContainer{
+  padding: 0 .3rem;
+  // position: absolute;
+  // left: 0;
+  // top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 1.32rem;
+  padding-bottom: .5rem;
+  overflow-y: auto;
+  :global{
+    .adm-infinite-scroll{
+      padding: 5px;
+    }
+  }
+  .order_scroll_content{
+    // padding-bottom: .2rem;
+  }
+  .order_noncar_scroll_content{
+
+  }
+  .listItem{
+    background: #FFFFFF;
+    border-radius: 0.2rem;
+    margin-bottom: .2rem;
+    overflow: hidden;
+    user-select:none;  
+    .listItemValue{
+      flex: 1;
+    }
+    a{
+      padding: .24rem;
+      padding-bottom: .1rem;
+      display: block;
+    }
+    .listItemHeader{
+      border-bottom: 1px solid #EBECF0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-bottom: .24rem;
+      
+      .insuranceCompanyName{
+        font-size: 0.32rem;
+        font-weight: 500;
+        color: #172B4D;
+        // max-width: 4.5rem;
+        flex: 1;
+        padding-right: .16rem;
+        display: flex;
+        // align-items: center;
+        img{
+          height: .6rem;
+          width: auto;
+          margin-right: .16rem;
+        }
+        span{
+          padding-top: .13rem;
+        }
+      }
+      .statusName{
+        background: rgba(255, 89, 53, 0.1);
+        border-radius: 0.04rem;
+        padding: 0 .16rem;
+        height: .44rem;
+        line-height: .44rem;
+        font-size: 0.24rem;
+        font-weight: 400;
+        color: rgba(94, 108, 132, 1);
+        background: rgba(94, 108, 132, 0.1);
+        border-radius: 0.04rem;
+        border: .01rem solid #5E6C84;
+        width: auto;
+        margin-top: .08rem;
+      }
+      .statusColor1,.statusColorunderwriting,.statusColormanual_underwriting{
+        background: rgba(54, 179, 126, 0.1);
+        border-radius: 0.04rem;
+        border: .01rem solid #36B37E;
+        color: #36B37E;
+      }
+      .statusColorAdvanceDay{
+        color: rgba(255, 89, 53, 1);
+        background: rgba(255, 89, 53, 0.1);
+        border-radius: 0.04rem;
+        border: .01rem solid #FF5935;
+      }
+      .statusColor3,.statusColorunpaid{
+        background: rgba(0, 101, 255, 0.1);
+        border-radius: 0.04rem;
+        border: .01rem solid #0065FF;
+        color: rgba(0, 101, 255, 1);
+      }
+      .statusColor2,.statusColorunderwriting_fail{
+        background: rgba(221, 0, 8, 0.1);
+        border-radius: 0.04rem;
+        border: .01rem solid #dd0008;
+        color: rgba(221, 0, 8, 1);
+      }
+      // .statusColorRenewal2{
+      //   color: rgba(94, 108, 132, 1);
+      //   background: rgba(94, 108, 132, 0.1);
+      //   border-radius: 0.04rem;
+      //   border: 1px solid #5E6C84;
+      // }
+    }
+
+    .listItemContent{
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: .28rem;
+    }
+    .listItemContent>div{
+      width: 50%;
+      margin-bottom: .2rem;
+      font-size: 0.28rem;
+      font-weight: 400;
+      color: rgba(23, 43, 77, 0.75);
+      display: flex;
+      line-height: .4rem;
+      .yuan{
+        font-size: 0.28rem;
+        font-weight: 600;
+        color: #FF5935;
+      }
+    }
+  }
+}
+.noncarListContainer{
+  // padding-top: 2rem;
+  padding-top: 1.32rem;
+}
+.carListContainer{
+  
+}
+.nodata{
+  color: rgba(23, 43, 77, 0.75);
+  padding-top: 1.7rem;
+  text-align: center;
+  img{
+    width: 3.28rem;
+    margin: 0 auto;
+    margin-bottom: .4rem;
+  }
+  p{
+    font-size: .3rem;
+    color: rgba(23, 43, 77, 0.85);
+    text-align: center;
+  }
+}
+.nomore{
+  padding: 0.1rem 0;
+  text-align: center;
+  color: rgba(23, 43, 77, 0.75)
+}
+.order_scroll_content{
+
+}
+
+.ellipsis{
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 1.8rem;
+}

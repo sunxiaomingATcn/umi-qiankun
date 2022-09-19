@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>以上情况全无</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-2.1%" y="-18.0%" width="104.8%" height="140.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="阿保2.2+" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="健康告知-投保人" transform="translate(-480.000000, -1269.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-2" filter="url(#filter-1)" transform="translate(0.000000, 1234.000000)">
+                <g id="分组-4" transform="translate(430.000000, 0.000000)">
+                    <g id="分组" transform="translate(50.000000, 29.000000)">
+                        <g id="icon-以上情况全无" transform="translate(0.000000, 6.000000)">
+                            <path d="M27.4955923,5.42244212 C28.0685102,4.85918596 28.9973937,4.85918596 29.5703116,5.42244212 C30.1432295,5.98569828 30.1432295,6.89891695 29.5703116,7.46217311 L12.16134,24.5775579 C11.5884221,25.140814 10.6595386,25.140814 10.0866207,24.5775579 L0.429688433,15.0834811 C-0.143229478,14.520225 -0.143229478,13.6070063 0.429688433,13.0437502 C1.00260634,12.480494 1.93148981,12.480494 2.50440772,13.0437502 L11.1239804,21.5179614 L27.4955923,5.42244212 Z" id="以上情况全无"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

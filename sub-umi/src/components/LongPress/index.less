@@ -1,0 +1,73 @@
+.modalContainer{
+  width: 5.5rem;
+  padding: 0;
+}
+.modal{
+  padding: .2rem .1rem;
+  .modalContentHeader{
+    margin-bottom: .5rem;
+    font-size: 0.32rem;
+    font-weight: 500;
+    color: #172B4D;
+    line-height: 0.4rem;
+  }
+  .modalContentButtons{
+    display: flex;
+    justify-content: space-between;
+    div:first-child{
+      width: 2.24rem;
+      background: #E4F0FF;
+      padding: .26rem 0;
+      border-radius: .1rem;
+      color: #437DFF;
+      border: 0;
+      font-size: .3rem;
+    }
+    div:last-child{
+      width: 2.24rem;
+      background: #5B8EFF;
+      padding: .26rem 0;
+      border-radius: .1rem;
+      color: #fff;
+      border: 0;
+      font-size: .3rem;
+    }
+  }
+}
+.longPressContainer{
+  position: relative;
+}
+.deleteContainer{
+  position: absolute;
+    display: inline-flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  display: inline-flex;
+  .deleteContent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 99;
+    .deleteBtn{
+      width: 1.2rem;
+      height: 1.2rem;
+      background:  #DD0008;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%; -50%);
+      font-size: 0.28rem;
+      line-height: 0.32rem;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

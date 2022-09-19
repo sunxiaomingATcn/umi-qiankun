@@ -1,0 +1,100 @@
+.payCodeContainer{
+  padding: .2rem .3rem;
+  background: #FFFFFF;
+  .payQrCode{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 0px rgba(179, 186, 197, 0.1);
+    border-radius: .2rem;
+    border: 1px solid #EBEEF0;
+    padding: .5rem 0;
+    margin-bottom: .4rem;
+    img{
+      width: 2.6rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: .24rem;
+    }
+    .retrieveQRCode{
+      width: 2.8rem;
+      height: .7rem;
+      line-height: .7rem;
+      text-align: center;
+      border-radius: 0.1rem;
+      border: 1px solid #5B8EFF;
+      margin: 0 auto;
+      font-size: .26rem;
+      font-weight: 400;
+      color: #437DFF;
+    }
+    .qrContent{
+      padding-left: 1.78rem;
+      margin-top: .4rem;
+      p{
+        font-size: .28rem;
+        font-weight: 400;
+        color: #333D4F;
+        line-height: .4rem;
+        margin-top: .1rem;
+      }
+      .price{
+        color: #FF5935;
+      }
+    }
+  }
+  .tips{
+    text-align: center;
+    p:first-child{
+      font-size: .3rem;
+      font-weight: 500;
+      color: #172B4D;
+      line-height: .42rem;
+      margin-bottom: .1rem;
+    }
+    p:last-child{
+      font-size: .24rem;
+      color: #5E6C84;
+      line-height: .42rem;
+    }
+  }
+  .QRError{
+    font-size: .28rem;
+    font-weight: 500;
+    color: #DD0008;
+    line-height: .4rem;
+    text-align: center;
+    margin-top: .4rem;
+  }
+  footer{
+    padding: .6rem 0;
+    .footerBtn{
+      flex: 1;
+      height: .9rem;
+      border-radius: .1rem;
+      text-align: center;
+      line-height: .9rem;
+      color: #fff;
+      background: #5B8EFF;
+      width: 100%;
+      margin: 0 auto;
+      font-size: .3rem;
+    }
+    .footerBtn.gradualChange{
+      background: linear-gradient(270deg, #0AB88D 0%, #5B8EFF 100%);
+    }
+    .footerBtn:not(:last-child){
+      margin-bottom: .3rem;
+    }
+    .complete{
+      font-size: .26rem;
+      font-weight: 400;
+      color: #5E6C84;
+      line-height: .42rem;
+      margin-top: .4rem;
+      text-align: center;
+      span{
+        color: #FF5935;
+        text-decoration: underline;
+      }
+    }
+  }
+}

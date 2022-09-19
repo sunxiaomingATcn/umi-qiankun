@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="125px" viewBox="0 0 140 125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>无内容</title>
+    <defs>
+        <path d="M20,68.6285942 L20,6.37121586 C20,2.85239488 22.8425134,0 26.348488,0 L45.6592607,0 C48.1486598,0 50.4083264,1.46028792 51.4387162,3.73494891 L53.4970357,8.27952292 C54.5272363,10.5541839 56.7869029,12.0144718 59.2764912,12.0144718 L89.651512,12.0144718 C93.1576759,12.0144718 96,14.8670566 96,18.3858776 L96,68.6285942 C96,72.1474152 93.1576759,75 89.651512,75 L26.348488,75 C22.8425134,75 20,72.1474152 20,68.6285942" id="path-1"></path>
+        <filter x="-57.9%" y="-41.3%" width="215.8%" height="217.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="13" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.226735433   0 0 0 0 0.437054197   0 0 0 0 0.687818878  0 0 0 0.0769927536 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M86,75 C86,75 78.5577605,74.6363663 76.7424138,65.1817001 L70.227732,28.256091 C69.6914226,25.2159463 67.0538106,23 63.9715467,23 L6.35502696,23 C2.37380093,23 -0.626463732,26.6255248 0.11228729,30.5443088 L7.51513687,69.8171289 C8.08174621,72.8231296 10.7038294,75 13.7578765,75 L86,75 Z" id="path-3"></path>
+        <filter x="-31.4%" y="-57.7%" width="162.8%" height="203.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="-3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.108708411   0 0 0 0 0.237823149   0 0 0 0 0.391767645  0 0 0 0.150650131 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="展业端H5UI-20210622" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2-1-2产品列表-缺省" transform="translate(-116.000000, -221.000000)">
+            <g id="无内容" transform="translate(116.000000, 221.000000)">
+                <g id="无内容" transform="translate(16.000000, 12.000000)">
+                    <g id="Fill-1">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#E3ECF3" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Fill-5">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#FDFEFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="编组-2" transform="translate(58.000000, 5.000000)">
+                        <polygon id="Fill-9" fill="#61A88A" points="26.6197183 35.109924 35.7457025 48.9247312 40.3098592 46.1802134 31.1840691 32.3655914"></polygon>
+                        <path d="M37.203672,9.13679196 C43.1380217,18.2792466 40.3157047,30.3617453 30.8997516,36.1238422 C21.4839914,41.8857518 9.04029701,39.1455438 3.10614023,30.0029019 C-2.82820944,20.8604472 -0.00569957017,8.77794851 9.41006066,3.01585162 C18.8258209,-2.74605797 31.2693223,-0.00547539098 37.203672,9.13679196" id="Fill-11" fill="#90DDBC"></path>
+                        <path d="M32.7003275,12.121593 C37.067003,18.9784075 34.9901242,28.0401519 28.0615491,32.361785 C21.1329741,36.683234 11.9762071,34.6276816 7.60953162,27.7710513 C3.24285614,20.9140527 5.31973499,11.8523083 12.24831,7.53085931 C19.1768851,3.20922614 28.3334659,5.26459436 32.7003275,12.121593" id="Fill-15" fill="#FFFFFF"></path>
+                        <path d="M34.2049707,50.853518 L45.1353351,67.8079821 C46.5492226,70.0012693 49.5141861,70.6588411 51.7579474,69.2764523 C54.0013233,67.8940635 54.6737774,64.995549 53.2600825,62.8022618 L42.3295255,45.8477977 C40.9156379,43.6545105 37.9504818,42.9971271 35.7071058,44.3795159 C33.4633445,45.7617163 32.7908905,48.6602308 34.2049707,50.853518" id="Fill-19" fill="#90DDBC"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

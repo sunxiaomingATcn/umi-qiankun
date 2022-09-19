@@ -1,0 +1,42 @@
+.con {
+  background: white;
+  min-height: 100%;
+  .content{
+    padding: .3rem .4rem;
+    display: flex;
+    flex-direction: column;
+    .tips{
+      font-size: .26rem;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #172B4D;
+    }
+
+    .uploadCon{
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 2rem;
+    }
+  }
+  
+
+  .submit {
+    width: calc(100% - 0.6rem);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0.3rem;
+    position: fixed;
+    bottom: .5rem;
+    height: 0.9rem;
+    background: linear-gradient(270deg, #0ab88d 0%, #5b8eff 100%);
+    border-radius: 0.1rem;
+    font-size: 0.3rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #ffffff;
+  }
+}

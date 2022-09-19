@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="146px" height="146px" viewBox="0 0 146 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>支付成功</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-12.3%" y="-12.3%" width="124.6%" height="124.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.349019608   0 0 0 0 0.360784314   0 0 0 0 0.396078431  0 0 0 0.371749344 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="阿保2.2+" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="支付成功备份" transform="translate(-302.000000, -220.000000)">
+            <g id="Group-2" transform="translate(295.000000, 220.000000)">
+                <g id="Group-3">
+                    <g id="支付失败" transform="translate(7.000000, 0.000000)">
+                        <g id="支付成功" filter="url(#filter-1)" transform="translate(8.000000, 8.000000)">
+                            <g id="路径">
+                                <circle id="蒙版" fill="#595C65" fill-rule="nonzero" cx="65" cy="65" r="65"></circle>
+                                <path d="M70.9546997,65.5 L91.8643819,86.4187517 C93.3785394,87.9335659 93.3785394,90.3610031 91.8643819,91.8758173 C91.8482943,91.891912 91.8320594,91.9078639 91.8156792,91.9236711 C90.3094055,93.3772599 87.8890582,93.355835 86.4096822,91.8758173 L65.5,70.9570657 L44.5903178,91.8758173 C43.1109418,93.355835 40.6905945,93.3772599 39.1843208,91.9236711 C39.1679406,91.9078639 39.1517057,91.891912 39.1356181,91.8758173 C37.6214606,90.3610031 37.6214606,87.9335659 39.1356181,86.4187517 L60.0453003,65.5 L39.1356181,44.5812483 C37.6214606,43.0664341 37.6214606,40.6389969 39.1356181,39.1241827 C39.1517057,39.108088 39.1679406,39.0921361 39.1843208,39.0763289 C40.6905945,37.6227401 43.1109418,37.644165 44.5903178,39.1241827 L65.5,60.0429343 L86.4096822,39.1241827 C87.8890582,37.644165 90.3094055,37.6227401 91.8156792,39.0763289 C91.8320594,39.0921361 91.8482943,39.108088 91.8643819,39.1241827 C93.3785394,40.6389969 93.3785394,43.0664341 91.8643819,44.5812483 L70.9546997,65.5 Z" fill="#FFFFFF"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

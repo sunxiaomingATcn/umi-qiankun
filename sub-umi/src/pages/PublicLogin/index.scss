@@ -1,0 +1,160 @@
+.container {
+  font-family: PingFangSC-Regular, PingFang SC;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 0.6rem 0 0.6rem;
+
+  > span:nth-child(1) {
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+    // font-family: HiraKakuStdN-W8, HiraKakuStdN;
+    font-weight: bold;
+    color: #c1c6ce;
+    // line-height: 1.2rem;
+  }
+  > span:nth-child(2) {
+    margin-top: 0.2rem;
+    font-size: 24px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #172b4d;
+    line-height: 0.66rem;
+  }
+  > span:nth-child(3) {
+    font-size: 24px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #172b4d;
+    line-height: 0.66rem;
+  }
+  > img:nth-child(4) {
+    position: absolute;
+    right: 0.6rem;
+    width: 3.36rem;
+    height: 4.70rem;
+    top: 0;
+  }
+
+  .formCon {
+    margin-top: 0.6rem;
+    :global {
+      .am-list-item .am-input-control input {
+        font-size: 14px;
+        caret-color: #0065ff;
+        color: #172b4d;
+      }
+    }
+    display: flex;
+    flex-direction: column;
+    .itemCon {
+      z-index: 10;
+      background-color: white;
+      box-sizing: border-box;
+      border: 1px solid #dfe1e6;
+      border-radius: 5px;
+      padding: 2px;
+    }
+    .tenant{
+      margin-top:0.2rem;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      > div:nth-child(1) {
+        width: 100%;
+      }
+    }
+  }
+  .agreeCon {
+    margin-top: 0.6rem;
+    :global {
+      .am-checkbox-agree {
+        margin-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        .am-checkbox-agree-label {
+          margin-left: 26px;
+        }
+        .am-checkbox {
+          display: flex;
+          align-items: center;
+          .am-checkbox-inner {
+            transform: scale(0.67);
+            transform-origin: left;
+            position: relative;
+            // width: 14px;
+            // height: 14px;
+            top: 0;
+          }
+          // .am-checkbox-inner::after {
+          //   right: 3px;
+          //   height: 7px;
+          // }
+        }
+      }
+      .am-checkbox.am-checkbox-checked .am-checkbox-inner {
+        border-color: #0065FF;
+        background: #0065FF;
+      }
+    }
+    .agree {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      color: #5e6c84;
+    }
+  }
+
+  .submit {
+    margin-top: 0.3rem;
+    height: 44px;
+    color: white;
+    background: #c1c6ce;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .submitAct{
+    margin-top: 0.3rem;
+    height: 44px;
+    color: white;
+    background: #0065FF;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.cusCon {
+  font-size: 14px;
+  background-color: white;
+  padding: 0 0.3rem 0 0.3rem;
+
+  .cusContent {
+    position: relative;
+    display: flex;
+    align-items: center;
+    > img:nth-child(1) {
+      width: 18px;
+      height: 18px;
+    }
+    > div:nth-child(2) {
+      margin-left: 0.2rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    > img:nth-child(3) {
+      position: absolute;
+      right: 0;
+      width: 10px;
+      height: 4px;
+    }
+  }
+}
+

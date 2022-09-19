@@ -1,0 +1,92 @@
+.con {
+  background: white;
+  padding-bottom: 1.66rem;
+
+  .companysCon{
+    display: flex;
+    flex-direction: column;
+
+    .company{
+      position: relative;
+      display: flex;
+      height: 1.46rem;
+      // border-radius: .2rem;
+      border-bottom: 1px solid #EBEEF0;
+      box-sizing: border-box;
+      .xu {
+        width: 0.68rem;
+        height: 0.68rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .logo{
+        align-self: center;
+        margin-left: .3rem;
+        margin-right: .2rem;
+        width: .84rem;
+        height: .6rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        >img{
+          // margin-top: .36rem;
+          // max-width: 1rem;
+          width: .84rem;
+          height: .6rem;
+        }
+      }
+      .mid{
+        width: calc(100% - 3rem);
+        display: flex;
+        flex-direction: column;
+        margin-top: .36rem;
+        >span:nth-child(1){
+          font-size: .3rem;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #172B4D;
+          line-height: .4rem;
+          overflow: hidden;
+          text-overflow: ellipsis; //文本溢出显示省略号
+          white-space: nowrap; //文本不会换行
+        }
+        >span:nth-child(2){
+          margin-top: .08rem;
+          font-size: .24rem;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #5E6C84;
+          line-height: .4rem;
+          overflow: hidden;
+          text-overflow: ellipsis; //文本溢出显示省略号
+          white-space: nowrap; //文本不会换行
+        }
+      }
+      .switch{
+        position: absolute;
+        top: .3rem;
+        right: .4rem;
+      }
+    }
+  }
+ 
+  .submit {
+    // width: calc(100% - 0.8rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // left: 0.4rem;
+    // z-index: 10;
+    // position: fixed;
+    // bottom: 0;
+    height: 0.9rem;
+    background: linear-gradient(270deg, #0ab88d 0%, #5b8eff 100%);
+    border-radius: 0.1rem;
+    font-size: 0.3rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #ffffff;
+  }
+}

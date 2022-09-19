@@ -1,0 +1,198 @@
+.con {
+  background-color: #f8f9f9;
+  min-height: 100%;
+  padding: 0.2rem 0.24rem 1.66rem 0.24rem;
+  :global {
+    .adm-list-item {
+      .adm-list-item-content {
+        padding: 0.2rem 0 0.2rem 0;
+        .adm-list-item-content-main {
+          display: flex;
+          align-items: center;
+          font-size: 0.3rem;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #333d4f;
+          padding: 0 0;
+        }
+        .adm-list-item-content-extra {
+          max-width: 75%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 0.3rem;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #5e6c84!important;
+        }
+      }
+    }
+    input{
+      width: 4rem;
+    }
+
+    .ppberror input::placeholder {
+      color: #dd0008 !important;
+    }
+    .ppberror input{
+      color:#dd0008;
+    }
+   
+    //v5 checkbox
+    .adm-checkbox-custom-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .adm-checkbox-content {
+      width: 100%;
+      .adm-list-item-content {
+        padding: 0.2rem 0 0.2rem 0;
+        .adm-list-item-content-main {
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #333d4f;
+        }
+      }
+    }
+  }
+
+  .subCon{
+    :global{
+      .adm-list-item-content {
+        padding: 0.2rem 0 0.2rem 0;
+        .adm-list-item-content-main {
+          font-size: .28rem;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #333d4f;
+        }
+
+        .adm-list-item-content-extra {
+          font-size: 0.28rem;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #5e6c84;
+        }
+      }
+    }
+  }
+
+  .submit {
+    // width: calc(100% - 0.48rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    height: 0.9rem;
+    background: linear-gradient(270deg, #0ab88d 0%, #5b8eff 100%);
+    border-radius: 0.1rem;
+    font-size: 0.3rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+  
+    color: #ffffff;
+  }
+}
+.carModelSpan {
+  display: block;
+  max-width: 4.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis; //文本溢出显示省略号
+  white-space: nowrap; //文本不会换行
+}
+.carModelsCon {
+  position: absolute;
+  // overflow: auto;
+  bottom: 0.18rem;
+  background: #ffffff;
+  border-radius: 0.3rem;
+  max-height: 90vh;
+  min-height: 1.2rem;
+  width: calc(100% - 0.4rem);
+  margin-left: 0.2rem;
+  padding: 1.2rem 0.3rem 0 .3rem;
+
+  .carModelsTitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.2rem;
+    > span:nth-child(1) {
+      font-size: 0.32rem;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #172b4d;
+    }
+    > span:nth-child(2) {
+      position: absolute;
+      right: .3rem;
+      font-size: 0.32rem;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #5b8eff;
+    }
+  }
+
+  .carModelsContent {
+    position: relative;
+    overflow: scroll;
+    padding-bottom: .2rem;
+    max-height: calc(90vh - 2rem);
+    display: flex;
+    flex-direction: column;
+
+    .carModelsItem {
+      width: 100%;
+      position: relative;
+      // height: 1.4rem;
+      box-sizing: border-box;
+      background: #f4f6f9;
+      border-radius: 0.2rem;
+      padding: 0.3rem;
+      display: flex;
+      align-items: center;
+      > span {
+        font-size: 0.3rem;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333d4f;
+        margin-right: 0.6rem;
+      }
+      .carModelsRadio {
+        position: absolute;
+        right: 0.3rem;
+      }
+    }
+    .carModelsItem:not(:first-child) {
+      margin-top: 0.2rem;
+    }
+
+    .carModelsItem-selected {
+      @extend .carModelsItem;
+      background: #ffffff;
+      border: 1px solid #5b8eff;
+    }
+  }
+}
+
+.mainSpan{
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+}
+.noMainSpan{
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+}
+
+.leftExtra{
+  display: flex;
+  .cb{
+    margin-left: .2rem;
+    color: #5e6c84;
+  }
+}

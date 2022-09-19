@@ -1,0 +1,36 @@
+
+.form {
+    .send {
+        color: rgba(58, 143, 255, 1);
+        line-height: 0.46rem;
+    }
+
+    .disabled {
+        color: #9D9D9D;
+    }
+}
+
+.active {
+    .send {
+        width: 1.68rem;
+        height: 0.7rem;
+        border: 0.02rem solid #ca8506;
+        border-radius: 0.1rem;
+        color: #CA8506;
+        text-align: center;
+        line-height: 0.7rem
+    }
+
+    .disabled {
+        color: #9D9D9D
+    }
+
+}
+
+.captcha{
+    img{
+        max-width: 85px;
+    }
+}
+
+

@@ -1,0 +1,17 @@
+.con{
+  background-color: white;
+  height: 90vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: .3rem .3rem 0 0;
+  padding: .6rem .3rem 0 .3rem;
+  img{
+    width: .36rem;
+    height: .36rem;
+    position: absolute;
+    right: .2rem;
+    top: .2rem;
+  }
+}

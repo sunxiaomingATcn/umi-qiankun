@@ -1,0 +1,202 @@
+.container {
+    padding-top: 0.3rem;
+    border-bottom: 1px solid #EFEFEF;
+    border-top: 0.01rem solid #efefef;
+
+    .label {
+        font-size: 0.28rem;
+        font-family: PingFangSC-Regular;
+        color: #595c65;
+        line-height: 0.42rem;
+        height: 0.42rem;
+        font-weight: 400;
+        color: rgba(89, 92, 101, 1);
+    }
+
+    input {
+        text-align: right;
+        width: 4.2rem;
+        height: 0.42rem;
+        font-size: 0.28rem;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: rgba(176, 179, 180, 1);
+        line-height: 0.42rem;
+    }
+
+    .errors {
+        height: 0.34rem;
+        font-size: 0.22rem;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: #F5192A;
+        line-height: 0.34rem;
+    }
+}
+
+.item_warpper {
+    background-color: #ffffff;
+    border-bottom: 1px solid #efefef;
+
+    &:last-child {
+        border-bottom: 0;
+
+    }
+
+    .item {
+        display: flex;
+        padding-top: 0.3rem;
+        padding-bottom: 0.15rem;
+
+        .item_children {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 0.26rem;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color: #595c65;
+            line-height: 0.5rem;
+        }
+
+        .item_extra {
+            text-align: right;
+            margin-right: 0.4rem;
+            max-width: 4.9rem;
+            line-height: 0.5rem;
+            color: #191c20;
+            font-size: 0.26rem;
+            font-family: PingFangSC-Regular;
+            position: relative;
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 0.1rem;
+                height: 0.18rem;
+                right: -0.4rem;
+                top: calc(50% - 0.09rem);
+                background: url('~@/assets/arrow.svg') no-repeat;
+                background-size: contain;
+            }
+        }
+
+        .extraDom {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .errors {
+        height: 0.34rem;
+        font-size: 0.22rem;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: #F5192A;
+        line-height: 0.34rem;
+    }
+}
+
+.job_container {
+    background: #F4F5F6;
+
+    .job_item {
+        margin-top: 0.2rem;
+
+        &:first-child {
+            margin: 0;
+        }
+    }
+
+    .first_ele_title {
+        padding: 0.3rem 0.4rem;
+        padding-left: 0.8rem;
+        font-size: 0.32rem;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        position: relative;
+        color: rgba(35, 40, 50, 1);
+        line-height: 0.36rem;
+        border-bottom: 1px solid #EFEFEF;
+        background: #FFFFFF;
+        &:before{
+            top: calc(50% - 0.16rem);
+            display: block;
+            position: absolute;
+            left: 0.4rem;
+            content: '';
+            height:0.32rem;
+            width: 0.32rem;
+            background: url("~@/assets/icon/job.svg") no-repeat;
+            background-size: 100% 100%;
+        }
+
+        &:after {
+            top: calc(50% - 0.05rem);
+            display: block;
+            position: absolute;
+            right: 0.4rem;
+            content: '';
+            height: 0.1rem;
+            width: 0.16rem;
+            background: url("~@/assets/icon/arrow-top.svg") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+
+    .second_ele_title {
+        display: none;
+        position: relative;
+        padding: 0.3rem 0;
+        font-size: 0.26rem;
+        font-weight: 400;
+        color: rgba(35, 40, 50, 1);
+        line-height: 0.5rem;
+        border-bottom: 1px solid #EFEFEF;
+        background: #FFFFFF;
+
+        &.active {
+            display: block;
+        }
+
+        &:after {
+            top: calc(50% - 0.05rem);
+            display: block;
+            position: absolute;
+            right: 0;
+            content: '';
+            height: 0.1rem;
+            width: 0.16rem;
+            background: url("~@/assets/icon/arrow-top.svg") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+
+    .third_item {
+        border-bottom: 1px solid #EFEFEF;
+        display: none;
+        padding: 0.3rem 0.4rem;
+        justify-content: space-between;
+
+        &.active {
+            display: flex;
+        }
+
+        .level {
+            font-size: 0.26rem;
+            font-family: PingFangSC;
+            font-weight: 400;
+            color: rgba(58, 143, 255, 1);
+            line-height: 0.5rem;
+        }
+
+        .level_title {
+            line-height: 0.5rem;
+
+        }
+    }
+}
+

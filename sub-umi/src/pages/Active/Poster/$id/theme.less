@@ -1,0 +1,75 @@
+// 颜色主题
+.theme(@inputColor:#248AD7, @inputBgColor:#EBFAFF, @submitBtnBgColor:#248AD7, @pointColor:#248AD7, @submitBtnTextShadow:rgba(20,152,234,0.57), @submitBtnBoxShadow:rgba(20,152,234,0.57), @formTitleLine:#EBFAFF){
+    input, .picker{
+        background-color: @inputBgColor;
+        color: @inputColor;
+        text-align: center;
+    }
+    h3, .tips .point{
+        color: @pointColor;
+    }
+    h3:after{
+        background-color: @formTitleLine;
+    }
+    .triangle{
+        border-top-color: @inputColor;
+    }
+    .FormList li {
+        :global{
+            .am-list-line{
+                background-color: @inputBgColor;
+                ::-webkit-input-placeholder, input {
+                    color: @inputColor;
+                }
+            }
+        }
+    }
+    .submit, .gotTop{
+        background: @submitBtnBgColor;
+        text-shadow: .03rem 0rem .06rem @submitBtnTextShadow;
+        box-shadow: 0rem .05rem .15rem @submitBtnBoxShadow;
+    }
+}
+
+/**
+    表单默认蓝色
+    @inputColor:input文字颜色
+    @inputBgColor:input背景色
+    @submitBtnBgColor:提交按钮背景色
+    @pointColor:重点文字颜色
+    @submitBtnTextShadow:提交按钮文字阴影
+    @submitBtnBoxShadow:提交按钮盒阴影
+    @formTitleLine表单标题下划线颜色
+*/
+.posterForm{
+    .theme()
+}
+// poster1
+.a1{
+    .theme(#248AD7,
+    #EBFAFF,
+    linear-gradient(-90deg,rgba(62,117,223,1) 0%,rgba(95,172,255,1) 100%),
+    #007EEB,
+    rgba(20,152,234,0.57),
+    rgba(64,120,225,0.4))
+}
+// poster2
+.a2{
+    .theme(#FF754C,
+    #FFF6F3,
+    linear-gradient(-90deg,rgba(250,87,39,1) 0%,rgba(255,143,99,1) 100%),
+    #FF5826,
+    rgba(251,87,40,0.57),
+    rgba(251,93,45,0.4))
+}
+// poster3
+.a3{
+    top:7.21rem !important;
+    .theme(#FF9147,
+    #FFF6F3,
+    linear-gradient(-90deg,rgba(255,102,0,1) 0%,rgba(255,144,70,1) 100%),
+    #FE7316,
+    rgba(255,102,0,0.57),
+    rgba(255,103,2,0.4),
+    #FFE9E2)
+}

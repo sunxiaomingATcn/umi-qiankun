@@ -1,0 +1,63 @@
+.payback_detail{
+    padding-top: 0.92rem;
+    img{
+        width:1.46rem ;
+    }
+    .payback_detail_msg{
+        font-size:0.4rem;
+        font-family:PingFangSC-Semibold;
+        font-weight:600;
+        color:#3A8FFF;
+        line-height:0.54rem;
+        padding-top: 0.32rem;
+        &.fail{
+            color: rgba(89,92,101,1);
+        }
+    }
+    .payback_detail_tip{
+        font-size:0.26rem;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:#595C65;
+        line-height:0.42rem;
+        padding-top: 0.1rem;
+        p{
+            text-align: center;
+        }
+
+    }
+}
+.payback_detail_btn{
+    margin-top: 1.24rem;
+    .btn{
+        width:6.1rem;
+        height:0.9rem;
+        border-radius:0.45rem;
+        font-size:0.32rem;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:#FFFFFF;
+        line-height:0.48rem;
+        &.check_policy{
+            background:linear-gradient(90deg,rgba(89,172,255,1) 0%,rgba(28,123,255,1) 100%);
+        }
+        &.back_home{
+            color:#3A8FFF;
+            border:1px solid #3A8FFF;
+            margin-top: 0.3rem;
+        }
+    }
+}
+:global {
+    .am-activity-indicator {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

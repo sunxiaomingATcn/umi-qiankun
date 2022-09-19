@@ -1,0 +1,463 @@
+.orderContent{
+  background: #F4F5F7;
+  padding-bottom: .2rem;
+  .cost{
+    font-size: 0.3rem;
+    font-weight: 600;
+    color: #FF5935;
+  }
+  .detailCard{
+    background: #fff;
+    margin: .2rem .3rem;
+    padding: .4rem;
+    border-radius: .2rem;
+    .innerCard{
+      &:not(:last-child){
+        margin-bottom: .5rem;
+      }
+    }
+    header{
+      font-size: 0.32rem;
+      font-weight: 500;
+      color: #172B4D;
+      padding-bottom: .3rem;
+      border-bottom: 1px solid #EBECF0;
+      margin-bottom: .28rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      span:first-child{
+        padding-right: .1rem;
+        flex: 1;
+      }
+      .order_status{
+        padding: 0 .16rem;
+        height: .44rem;
+        line-height: .44rem;
+        font-size: 0.24rem;
+        font-weight: 400;
+        color: #0065FF;
+        background: rgba(0, 101, 255, 0.1);
+        border-radius: 0.04rem;
+        border:1px solid #0065FF;
+      }
+      .order_status_1{
+        background: rgba(54, 179, 126, 0.1);
+        border:1px solid #36B37E;
+        color: #36B37E;
+      }
+      .order_status_2{
+        background: rgba(221, 0, 8, 0.1);
+        border: 1px solid #dd0008;
+        color: rgba(221, 0, 8, 1);
+      }
+    }
+    header.flexHeader{
+      display: flex;
+      .price{
+        font-size: .3rem;
+        font-weight: 600;
+        color: #FF5935;
+        line-height: .4rem;
+      }
+    }
+    .item{
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      font-size: 0.26rem;
+      color:#172B4D;
+      span{
+        max-width: 4rem;
+        word-break: break-word;
+        color: #5E6C84;
+      }
+      &:last-child{
+        text-align: right;
+      }
+      &:not(:last-child){
+        margin-bottom: .3rem;
+      }
+      .name{
+        font-size: 0.26rem;
+        font-weight: 400;
+        color: #333D4F;
+        text-align: left;
+      }
+      .content{
+        font-size: 0.26rem;
+        font-weight: 400;
+        color: #172B4D;
+      }
+    }
+  }
+  .productCard{
+    .detailCard();
+    border-radius: 0 0 .4rem .4rem;
+    margin: 0;
+  }
+}
+.detailNoCollapseItem{
+  font-size: 0.3rem;
+  font-weight: 500;
+  color: #172B4D;
+  padding-right: 0.5rem;
+  background: #FFFFFF;
+  border-radius: 0.2rem;
+  padding: 0.3rem;
+  margin: .2rem .3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span:last-child{
+    font-size: .26rem;
+    font-weight: 400;
+  }
+}
+// 客户待支付
+.bepaid{
+  background: #F4F5F7;
+  padding-bottom: 1.8rem;
+  footer{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 1.8rem;
+    background: #fff;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0rem 0rem 0.1rem 0rem rgba(0, 0, 0, 0.1);
+    .cost{
+      font-size: 0.4rem;
+      font-weight: 600;
+      color: #FF5935;
+      margin-left: .4rem;
+      span{
+        font-size: .32rem;
+      }
+    }
+    .pay{
+      width: 2.2rem;
+      height: 0.8rem;
+      background: #0065ff;
+      border-radius: 0.1rem;
+      line-height: .8rem;
+      color: #FFFFFF;
+      text-align: center;
+      margin-right: .3rem;
+      font-size: .3rem;
+    }
+  }
+}
+// 业务员待支付
+.order_detail_pending{
+  background: #F4F5F7;
+  height: 100%;
+  overflow-y: auto;
+  .orderNo{
+      padding: .22rem .4rem;
+      display: flex;
+      justify-content: space-between;
+      span:first-child{
+        font-weight: 400;
+        color: #5E6C84;
+      }
+      span:last-child{
+        font-weight: 400;
+        color: #172B4D;
+      }
+  }
+  footer{
+    height: 1.8rem;
+    .flexFooter{
+      display: flex;
+      position: fixed;
+      width: 100%;
+      height: 1.8rem;
+      background: #fff;
+      justify-content: space-between;
+      align-items: flex-start;
+      bottom: 0;
+      left: 0;
+      box-shadow: 0rem 0rem 0.1rem 0rem rgba(0, 0, 0, 0.1);
+      padding-top: .2rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .footerBtn{
+      flex: 1;
+      height: .9rem;
+      margin: 0 .3rem;
+      background: #5B8EFF;
+      border-radius: .1rem;
+      text-align: center;
+      line-height: .9rem;
+      color: #fff;
+      font-size: .3rem;
+      &:not(:last-child){
+        margin-right: -.1rem;
+      }
+      &.gradualChange{
+        background: linear-gradient(270deg, #0AB88D 0%, #5B8EFF 100%);
+      }
+    }
+    .cost{
+      font-size: 0.4rem;
+      font-weight: 600;
+      color: #FF5935;
+      margin-left: .4rem;
+      span{
+        font-size: .32rem;
+      }
+    }
+    .pay{
+      width: 2.2rem;
+      height: 0.8rem;
+      background: linear-gradient(270deg, #0AB88D 0%, #5B8EFF 100%);
+      border-radius: 0.1rem;
+      line-height: .8rem;
+      color: #FFFFFF;
+      text-align: center;
+      margin-right: .3rem;
+      font-size: .3rem;
+    }
+  }
+}
+
+.modalContainer{
+  width: 5.5rem;
+  padding: 0;
+}
+.modal{
+  padding: .2rem .1rem;
+  .modalContentHeader{
+    margin-bottom: .5rem;
+    font-size: 0.32rem;
+    font-weight: 500;
+    color: #172B4D;
+    line-height: 0.4rem;
+  }
+  .modalContentButtons{
+    display: flex;
+    justify-content: space-between;
+    div:first-child{
+      width: 2.24rem;
+      background: #E4F0FF;
+      padding: .26rem 0;
+      border-radius: .1rem;
+      color: #437DFF;
+      border: 0;
+      font-size: .3rem;
+    }
+    div:last-child{
+      width: 2.24rem;
+      background: #5B8EFF;
+      padding: .26rem 0;
+      border-radius: .1rem;
+      color: #fff;
+      border: 0;
+      font-size: .3rem;
+    }
+  }
+}
+
+// 投保确认
+.order_confirm{
+  background: #F4F5F7;
+  padding-bottom: 1.8rem;
+  .orderNo{
+      padding: .22rem .4rem;
+      display: flex;
+      justify-content: space-between;
+      span:first-child{
+        font-weight: 400;
+        color: #5E6C84;
+      }
+      span:last-child{
+        font-weight: 400;
+        color: #172B4D;
+      }
+  }
+  .reads{
+    padding: .12rem .3rem .32rem;
+    display: flex;
+    align-items: flex-start;
+    .insured_document_container{
+      font-size: 0.24rem;
+      font-weight: 400;
+      color: #5E6C84;
+      flex: 1;
+      padding-left: .08rem;
+      line-height: .45rem;
+      span{
+        color: rgba(0, 101, 255, 1);
+        word-break: break-all;
+      }
+    }
+    .radio {
+      width: 0.28rem;
+      height: 0.28rem;
+      border-radius: 50%;
+      position: relative;
+      border: 1px solid #B0B3B4;
+      display: inline-block;
+    }
+  
+    .checked {
+      background:#0065FF;
+      border: 0;
+      margin-top: 0.06rem;
+      &::before {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 0.14rem;
+          height: 0.08rem;
+          border-left: 1px solid #ffffff;
+          border-bottom: 1px solid #ffffff;
+          top: calc(50% - 0.07rem);
+          left: calc(50% - 0.08rem);
+          transform: rotate(-45deg);
+      }
+    }
+
+  }
+  footer{
+    position: fixed;
+    width: 100%;
+    height: 1.8rem;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0rem 0rem 0.1rem 0rem rgba(0, 0, 0, 0.1);
+    .cost{
+      font-size: 0.4rem;
+      font-weight: 600;
+      color: #FF5935;
+      margin-left: .4rem;
+      span{
+        font-size: .32rem;
+      }
+    }
+    .pay{
+      width: 2.2rem;
+      height: 0.8rem;
+      background: #0065ff;
+      border-radius: 0.1rem;
+      line-height: .8rem;
+      color: #FFFFFF;
+      text-align: center;
+      margin-right: .3rem;
+      font-size: .3rem;
+    }
+  }
+}
+
+/*
+*车险分享支付
+*/
+.carOrderContent{
+  .detailHeadersCard{
+    header:last-child{
+      margin-bottom: 0;
+      border: 0;
+      padding-bottom: 0;
+    }
+    header.flexHeader{
+      display: flex;
+      span{
+        font-size: .28rem;
+        font-weight: 400;
+        color: #333D4F;
+        line-height: .4rem;
+      }
+      span:first-child{
+        min-width: 2rem;
+      }
+      span:last-child{
+        color: #5E6C84;
+        word-break: break-word;
+        text-align: right;
+      }
+      .price{
+        font-size: .3rem;
+        font-weight: 600;
+        color: #FF5935;
+        line-height: .4rem;
+      }
+    }
+  }
+  .orderTitle{
+    padding: .3rem 0;
+    background: #fff;
+    margin: 0.2rem 0.3rem;
+    border-radius: 0.2rem;
+    .orderBriefly{
+      display: flex;
+      padding: 0 .3rem .2rem .3rem;
+      justify-content: space-between;
+      img{
+        width:auto;
+        height: .4rem;
+        margin-right: .2rem;
+      }
+      .orderBrieflyCom{
+        flex:1;
+        line-height: .4rem;
+        font-size: .3rem;
+        font-weight: 500;
+        color: #172B4D;
+      }
+      .orderBrieflyPrice{
+        font-size: .3rem;
+        font-weight: 600;
+        color: #FF5935;
+        line-height: .4rem;
+      }
+    }
+    .orderTitleDes{
+      border-bottom: 1px solid #EBEEF0;
+      padding: 0 .3rem .3rem .3rem;
+      font-size: .24rem;
+      font-weight: 400;
+      color: #333D4F;
+      line-height: .34rem;
+    }
+    .toOwner{
+      font-size: .28rem;
+      font-weight: 500;
+      color: #172B4D;
+      line-height: .4rem;
+      padding: .3rem .3rem 0 .3rem;
+    }
+  }
+  .payCode{
+    img{
+      display: block;
+      width: 2.6rem;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+  .detailCard{
+    .item{
+      span{
+        color:#5E6C84;
+      }
+      span.name{
+        color:#333D4F;
+      }
+    }
+  }
+}
+
+.orderFlexFooter{
+  width: 100%;
+  height: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
