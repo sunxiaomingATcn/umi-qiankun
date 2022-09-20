@@ -13,13 +13,13 @@ const microApps = [
   },
   {
     name: 'sub-umi',
-    entry: process.env.VUE_APP_SUB_UMI,
-    activeRule: '/sub-umi/'
+    entry: process.env.VUE_APP_SUB_UMI, // 配置为字符串时，表示微应用的访问地址
+    activeRule: '/sub-umi' // 微应用的激活规则
   },
   {
     name: 'sub-product',
     entry: process.env.VUE_APP_SUB_PRODUCT,
-    activeRule: '/sub-product/'
+    activeRule: '/sub-product'
   }
 ]
 

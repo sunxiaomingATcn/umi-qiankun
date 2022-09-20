@@ -2,9 +2,16 @@ const express = require('express')
 const path = require('path')
 const app = express()
 const history = require('connect-history-api-fallback');
+
+// app.use("/sub-product", express.static(path.join(__dirname, './dist/sub-product')))
+// app.use("/sub-umi", express.static(path.join(__dirname, './dist/sub-umi')))
+
+app.use("/subapp", express.static(path.join(__dirname, './dist')))
+
 //这句代码需要在express.static上面
 app.use(history());
-app.use(express.static(path.join(__dirname, './dist')))
+app.use(express.static(path.join(__dirname, './dist/main')))
+
 // app.all('*', function (req, res, next) {
 //     res.header("Access-Control-Allow-Origin", "*");
 //     res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
@@ -12,15 +19,9 @@ app.use(express.static(path.join(__dirname, './dist')))
 //     next();
 // });
 
-app.get('/', (req, res) => {
-    console.log("request test origin:", req.headers.origin)
-    setTimeout(() => {
-        res.send("test success")
-    }, 2000)
-})
-
 app.listen(8888, () => {
   console.log(`App listening at port 8888`)
 })
 
-// http://localhost:8888/sub-product/index.html#/
+// http://localhost:8888/sub-product#/ 带基座
+// http://localhost:8888/subapp/sub-product/#/ 独立运行

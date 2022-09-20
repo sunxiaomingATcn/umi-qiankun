@@ -149,7 +149,7 @@ export default {
     "weixin": "window.wx",
   },
   chainWebpack: webpackPlugin,
-  publicPath: './',
+  publicPath: '/subapp/sub-product/',
   base: '/',
   qiankun: {
     slave: {},
