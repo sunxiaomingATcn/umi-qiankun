@@ -20,5 +20,15 @@ app.listen(8888, () => {
   console.log(`App listening at port 8888`)
 })
 
-// http://localhost:8888/sub-umi-product#/ 带基座
-// http://localhost:8888/app/product/#/ 独立运行
+
+/**
+ * node文件服务模拟部署 
+ * 执行 node server
+ * 
+ * 访问地址示例:
+ * http://localhost:8888/sub-vue 带基座
+ * http://localhost:8888/sub-umi-product#/ 带基座
+ * 
+ * http://localhost:8888/app/vue 独立运行
+ * http://localhost:8888/app/product/#/ 独立运行
+*/
