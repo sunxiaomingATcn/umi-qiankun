@@ -28,7 +28,8 @@
     "build:sub-react": "cd sub-react && npm run build",
     "build:sub-vue": "cd sub-vue && npm run build",
     "build:sub-umi": "cd sub-umi && npm run build",
-    "build:sub-umi-product": "cd sub-umi-product && npm run build  && bash ./scripts/bundle.sh",
+    "build:sub-umi-product": "cd sub-umi-product && npm run build",
+    "build-micro:sub-umi-product": "cd sub-umi-product && npm run build && bash ./scripts/bundle.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

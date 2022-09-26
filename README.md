@@ -28,3 +28,7 @@ npm run build
 ```
 
 
+单独构建并打包 sub-umi-product 子应用
+```
+build-micro:sub-umi-product
+```

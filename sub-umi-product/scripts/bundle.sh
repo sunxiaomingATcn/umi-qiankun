@@ -8,4 +8,4 @@ mkdir -p ../dist/app
 # sub-umi-product子应用
 cp -r ./dist/ ../dist/app/product/
 
-echo 'bundle.sh execute success.'
+echo 'sub-umi-product bundle.sh execute success.'
