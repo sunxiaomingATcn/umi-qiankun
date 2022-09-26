@@ -17,9 +17,9 @@ const microApps = [
     activeRule: '/sub-umi' // 微应用的激活规则
   },
   {
-    name: 'sub-product',
+    name: 'sub-umi-product',
     entry: process.env.VUE_APP_SUB_PRODUCT,
-    activeRule: '/sub-product'
+    activeRule: '/sub-umi-product'
   }
 ]
 

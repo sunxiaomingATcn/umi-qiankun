@@ -144,12 +144,11 @@ export default {
   // manifest: {
   //   basePath: '/',
   // },
-  outputPath: '../dist/sub-umi',
   externals: {
     "weixin": "window.wx",
   },
   chainWebpack: webpackPlugin,
-  publicPath: '/subapp/sub-umi/',
+  publicPath: '/app/umi/',
   base: '/',
   qiankun: {
     slave: {},

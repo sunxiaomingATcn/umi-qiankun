@@ -144,12 +144,11 @@ export default {
   // manifest: {
   //   basePath: '/',
   // },
-  outputPath: '../dist/sub-product',
   externals: {
     "weixin": "window.wx",
   },
   chainWebpack: webpackPlugin,
-  publicPath: '/subapp/sub-product/',
+  publicPath: '/app/product/',
   base: '/',
   qiankun: {
     slave: {},
