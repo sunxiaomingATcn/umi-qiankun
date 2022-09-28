@@ -6,18 +6,12 @@
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
-    "test:coverage": "umi-test --coverage",
-    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx",
-    "lint-staged": "lint-staged",
-    "lint:style": "stylelint --fix \"src/**/*.less\" --syntax less",
-    "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src && npm run lint:style"
+    "test:coverage": "umi-test --coverage"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "**/*.less": "stylelint --syntax less",
-    "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
     "*.{js,jsx,less,md,json}": [
       "prettier --write"
     ],

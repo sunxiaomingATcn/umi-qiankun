@@ -1,6 +1,6 @@
 .inputContainer{
     position: relative;
-    padding: 0rem .5rem 0rem .5rem;
+    padding: 0 .5rem 0 .5rem;
     font-family:PingFang SC;
     .code,.phone{
         margin-bottom: .35rem;
@@ -61,8 +61,8 @@
         height:0.85rem;
         font-size: .3rem;
         background:linear-gradient(-90deg,rgba(255,154,24,1) 0%,rgba(255,197,13,1) 100%);
-        box-shadow: 0rem .08rem .2rem rgba(255,172,20,0.3);
-        border-radius:0rem;
+        box-shadow: 0 .08rem .2rem rgba(255,172,20,0.3);
+        border-radius:0;
         border-radius: .425rem;
         text-align: center;
         line-height: .85rem;
@@ -96,11 +96,12 @@
         div{
             width:1.64rem;
             height:0.6rem;
-            border:0px !important;
+            border:0 !important;
             font-size:0.22rem;
             font-weight:400;
             line-height:0.6rem;
         }
+
         margin-top: .1rem;
         margin-right: .3rem;
     }
@@ -121,9 +122,9 @@
         }
 
         .am-list-item .am-list-line {
-            border-bottom: 0px !important;
-            &:after{
-                width: 0px !important;
+            border-bottom: 0 !important;
+            &::after{
+                width: 0 !important;
             }
         }
     }

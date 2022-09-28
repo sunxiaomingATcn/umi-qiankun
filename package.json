@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "description": "qiankun demo",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "lint-staged": "^13.0.3",
+    "npm-run-all": "^4.1.5",
+    "@umijs/fabric": "^3.0.0",
     "connect-history-api-fallback": "^2.0.0",
     "express": "^4.18.1"
-  },
-  "devDependencies": {
-    "npm-run-all": "^4.1.5"
   },
   "scripts": {
     "install": "npm-run-all --serial install:*",
@@ -31,7 +32,10 @@
     "build:sub-umi-product": "cd sub-umi-product && npm run build",
     "build-micro:sub-umi-product": "cd sub-umi-product && npm run build && bash ./scripts/bundle.sh",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "lint-staged"
+    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx",
+    "lint-staged": "lint-staged",
+    "lint:style": "stylelint --fix \"./**/**/*.less\" --syntax less",
+    "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./umi-eslint && npm run lint:style"
   },
   "repository": {
     "type": "git",
