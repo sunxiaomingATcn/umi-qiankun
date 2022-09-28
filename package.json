@@ -30,7 +30,8 @@
     "build:sub-umi": "cd sub-umi && npm run build",
     "build:sub-umi-product": "cd sub-umi-product && npm run build",
     "build-micro:sub-umi-product": "cd sub-umi-product && npm run build && bash ./scripts/bundle.sh",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -42,5 +43,11 @@
     "demo"
   ],
   "author": "fengxianqi",
-  "license": "MIT"
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
 }
