@@ -29,11 +29,11 @@ const PersonInfo = (props, ref) => {
   }, [data]);
 
   const inputRefs = {
-    ['owner.idCard']: useRef(),
-    ['policyHolder.name']: useRef(),
-    ['policyHolder.idCard']: useRef(),
-    ['insured.name']: useRef(),
-    ['insured.idCard']: useRef(),
+    'owner.idCard': useRef(),
+    'policyHolder.name': useRef(),
+    'policyHolder.idCard': useRef(),
+    'insured.name': useRef(),
+    'insured.idCard': useRef(),
   };
 
   const orderKeys = [
@@ -331,7 +331,7 @@ const PersonInfo = (props, ref) => {
                 onConfirm: (value) => {
                   const preValue = getFieldValue('owner.idCardType');
                   if (preValue && preValue[0] != value[0]) {
-                    setFieldsValue({ ['owner.idCard']: '' })
+                    setFieldsValue({ 'owner.idCard': '' })
                   }
                 }
               })}
@@ -407,7 +407,7 @@ const PersonInfo = (props, ref) => {
                 onConfirm: (value) => {
                   const preValue = getFieldValue('policyHolder.idCardType');
                   if (preValue && preValue[0] != value[0]) {
-                    setFieldsValue({ ['policyHolder.idCard']: '' })
+                    setFieldsValue({ 'policyHolder.idCard': '' })
                   }
                 }
               })}
@@ -490,7 +490,7 @@ const PersonInfo = (props, ref) => {
                 onConfirm: (value) => {
                   const preValue = getFieldValue('insured.idCardType');
                   if (preValue && preValue[0] != value[0]) {
-                    setFieldsValue({ ['insured.idCard']: '' })
+                    setFieldsValue({ 'insured.idCard': '' })
                   }
                 }
               })}

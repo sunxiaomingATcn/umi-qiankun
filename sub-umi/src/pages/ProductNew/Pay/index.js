@@ -5,10 +5,10 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'dva';
 import styles from './index.scss';
 import { Toast } from "antd-mobile";
-import { history } from 'umi';;
+import { history } from 'umi';
 
 import Utils from '@/utils/utils';
-import { payFixPrice } from '../assets/productConfig/judgeProductFeature';
+import { payFixPrice } from '../assets/productConfig/judgeProductFeature';;
 @connect(({ pay, loading, productNew }) => ({
     pay,
     productNew,
