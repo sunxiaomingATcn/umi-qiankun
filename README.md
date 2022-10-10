@@ -32,3 +32,18 @@ npm run build
 ```
 build-micro:sub-umi-product
 ```
+
+
+## tips
+
+### sub-vue package.json
+
+```
+  "dependencies": {
+    "common": "file:../common",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+```
