@@ -47,3 +47,11 @@ build-micro:sub-umi-product
     "vuex": "^3.4.0"
   },
 ```
+
+### eslint 阻止路径别名报错
+```
+  settings: {
+    // ...
+    "import/resolver": { alias: [["/@", "./src"]] }
+  },
+  ```

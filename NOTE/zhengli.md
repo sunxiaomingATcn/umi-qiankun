@@ -1,0 +1,17 @@
+useCallback的作用
+usecallback不是用来解决组件中有过多内部函数导致的性能问题：
+1.我们要知道，js创建一个函数的成本是非常小的，这点计算对于计算机来说是小case
+2.其实使用useCallback会产成额外的性能：对deps的判断
+3.其实每次组件重新渲染时，都无所谓避免重新创建内部函数，因为即使useCallback的deps没有变，它也会重新创建内部函数作为useCallback的实参
+
+那么，它的作用到底是什么？useCallback的作用其实是用来避免子组件不必要的reRender：
+首先，假如我们不使用useCallback，在父组件中创建了一个名为handleClick的事件处理函数，根据需求我们需要把这个handleClick传给子组件，当父组件中的一些state变化后（这些state跟子组件没有关系），父组件会reRender，然后会重新创建名为handleClick函数实例，并传给子组件，这时即使用React.memo把子组件包裹起来，子组件也会重新渲染，因为props已经变化了，但这个渲染是无意义的
+
+如何优化呢？这时候就可以用useCallback了，我们用useCallback把函数包起来之后，在父组件中只有当deps变化的时候，才会创建新的handleClick实例，子组件才会跟着reRender（注意，必须要用React.memo把子组件包起来才有用，否则子组件还是会reRender。React.memo是类似于class组件中的Pure.Component的作用）
+
+对于这种deps不是经常变化的情况，我们用useCallback和React.memo的方式可以很好地避免子组件无效的reRender。但其实社区中对这个useCallback的使用也有争议，比如子组件中只是渲染了几个div，没有其他的大量计算，而浏览器去重新渲染几个dom的性能损耗其实也是非常小的，我们花了这么大的劲，使用了useCallback和React.memo，换来的收益很小，所以一些人认为就不用useCallback，就让浏览器去重新渲染好了。至于到底用不用，此处不深入讨论，我的建议是当子组件中的dom数量很多，或者有一些大量的计算操作，是可以进行这样的优化的。
+
+以上都是讨论的deps不会经常改变的情况的优化，而很多时候useCallback中的deps数组中的变量是会经常改变的，这个时候我们用useCallback已经没啥意义了，反而会造成性能损耗（deps判断）。有没有什么办法可以让子组件不重新渲染，也能拿到父组件中handleClick函数中的最新state值呢？下面我们讨论useRef，useReducer，usePersistFn这三种解决方法
+————————————————
+版权声明：本文为CSDN博主「Kobe_G」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/Kobe_G/article/details/121752526
